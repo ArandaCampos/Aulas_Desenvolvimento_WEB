@@ -1,117 +1,76 @@
 <h1>&lt;Input&gt;</h1>
-    
 
 <h2>O que significa input?</h2>
+
 <p>&emsp;Input é uma palavra em <i>inglês</i> que significa <strong>entrada</strong>.</p>
 
 <h2>Quando devo usar a tag input?</h2>
+
 <p>&emsp;A tag input - <code>&lt;input&gt;</code> - é usada quando precisamos que <strong>o usuário entre com alguma informação</strong>: nome, e-mail, data, fotos e etc... Normalmente usadas dentro da tag &lt;form&gt;</p>
 
 <h2>O que devo ficar atento?</h2>
+
 <p>&emsp;Caso o input não seja de texto, <strong>devo usar o atributo type</strong>.</p>
 
 <h2>Anatomia de uma entrada de usuário</h2>
-<img src="anatomia_input.png">
 
+<img src="anatomia_input.png">
 
 <h2>Input de textos</h2>
 
-
 <code>&lt;input type="text" placeholder="Nome"&gt;</code> 
-
 
 <code>&lt;input type="password" placeholder="Senha"&gt;</code> 
 
-
-
 <code>&lt;input type="email" placeholder="E-mail"&gt;</code> 
-
-
 
 <code>&lt;input type="search" placeholder="Pesquisar"&gt;</code> 
 
-
-
 <h2>Input de números</h2>
-
-
 
 <code>&lt;input type="range" min="0" max="100" step="10"&gt;</code> 
 
-
-
 <code>&lt;input type="number" placeholder="Idade"&gt;</code> 
-
-
 
 <code>&lt;input type="tel" placeholder="Fone"&gt;</code> 
 
 
-
 <h2>Input de data</h2>
-
-
 
 <code>&lt;input type="datetime-local"&gt;</code> 
 
-
-
 <code>&lt;input type="date"&gt;</code> 
-
-
 
 <code>&lt;input type="month"&gt;</code> 
 
-
-
 <code>&lt;input type="time"&gt;</code> 
-
-
 
 <code>&lt;input type="week"&gt;</code> 
 
-
-
 <h2>Input de cor</h2>
-
-
 
 <code>&lt;input type="color"&gt;</code> 
 
-
 <h2>Input booleanos (sim ou não)</h2>
 
-
-
 <code>
-&lt;input type="checkbox" name="musica" value="funk"&gt; Funk<br />
-&lt;input type="checkbox" name="musica" value="pagode"&gt; Pagode<br />
+    &lt;input type="checkbox" name="musica" value="funk"&gt; Funk</code>
+<code>
+    &lt;input type="checkbox" name="musica" value="pagode"&gt; Pagode
 </code> 
 
-
-
-
-
 <code>
-&lt;input type="radio" name="sexo" value="feminino"&gt;<br />
-&lt;input type="radio" name="sexo" value="masculino"&gt;<br />
+    &lt;input type="radio" name="sexo" value="feminino"&gt;
 </code>
-
-
-
-
+<code>
+    &lt;input type="radio" name="sexo" value="masculino"&gt;
+</code>
 
 <h2>Input de arquivos</h2>
 
-
-
 <code>&lt;input type="file" accept=".jpg,.jpeg,.gif"&gt;</code> 
 
-
-
 <h2>Input de botões</h2>
-
-
 
 <code>&lt;input type="reset"&gt;</code> 
 
