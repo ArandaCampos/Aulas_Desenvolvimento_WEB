@@ -84,8 +84,8 @@
 
 
 <code>
-&lt;input type="checkbox" name="musica" value="funk"&gt; Funk<br>
-&lt;input type="checkbox" name="musica" value="pagode"&gt; Pagode<br>
+&lt;input type="checkbox" name="musica" value="funk"&gt; Funk<br />
+&lt;input type="checkbox" name="musica" value="pagode"&gt; Pagode<br />
 </code> 
 
 
@@ -93,8 +93,8 @@
 
 
 <code>
-&lt;input type="radio" name="sexo" value="feminino"&gt;<br>
-&lt;input type="radio" name="sexo" value="masculino"&gt;<br>
+&lt;input type="radio" name="sexo" value="feminino"&gt;<br />
+&lt;input type="radio" name="sexo" value="masculino"&gt;<br />
 </code>
 
 
@@ -120,4 +120,4 @@
 <code>&lt;input type="submit"&gt;</code> 
 
 <h2>Aprofundando o assunto</h2>
-<p>&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso pode soar estranho e desnessário ao primeiro momento, mas isso é fruto de uma super habilidade que nós possuimos e o computador não: reconhecer o sentido das informações pelo contexto. <br>&emsp;Cada informação é lida de um jeito. Nós, seres humanos, lemos informações de tipos diferentes automaticamente. Por exemplo, se eu te disser <strong>"Eu sou de 96"</strong>, você é plenamente capaz de <i>ler</i> e entender que "Eu sou de" é um texto e "96" se refere à abreviação do ano de 1996. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele saiba ler corretamente.</p>
+<p>&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso pode soar estranho e desnessário ao primeiro momento, mas isso é fruto de uma super habilidade que nós possuimos e o computador não: reconhecer o sentido das informações pelo contexto. <br />&emsp;Cada informação é lida de um jeito. Nós, seres humanos, lemos informações de tipos diferentes automaticamente. Por exemplo, se eu te disser <strong>"Eu sou de 96"</strong>, você é plenamente capaz de <i>ler</i> e entender que "Eu sou de" é um texto e "96" se refere à abreviação do ano de 1996. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele saiba ler corretamente.</p>
