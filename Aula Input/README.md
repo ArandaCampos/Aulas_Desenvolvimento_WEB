@@ -14,42 +14,42 @@
 
 <h2>Anatomia de uma entrada de usuário</h2>
 
-<img src="anatomia_input.png">
+<img src="anatomia.png">
 
 <h2>Input de texto</h2>
 
-<code>&lt;input type="text" placeholder="Nome"&gt;</code> 
+<code>&lt;input type="text" placeholder="Nome"&gt;</code>
 
-<code>&lt;input type="password" placeholder="Senha"&gt;</code> 
+<code>&lt;input type="password" placeholder="Senha"&gt;</code>
 
-<code>&lt;input type="email" placeholder="E-mail"&gt;</code> 
+<code>&lt;input type="email" placeholder="E-mail"&gt;</code>
 
-<code>&lt;input type="search" placeholder="Pesquisar"&gt;</code> 
+<code>&lt;input type="search" placeholder="Pesquisar"&gt;</code>
 
 <h2>Input de número</h2>
 
-<code>&lt;input type="range" min="0" max="100" step="10"&gt;</code> 
+<code>&lt;input type="range" min="0" max="100" step="10"&gt;</code>
 
-<code>&lt;input type="number" placeholder="Idade"&gt;</code> 
+<code>&lt;input type="number" placeholder="Idade"&gt;</code>
 
-<code>&lt;input type="tel" placeholder="Fone"&gt;</code> 
+<code>&lt;input type="tel" placeholder="Fone"&gt;</code>
 
 
 <h2>Input de data</h2>
 
-<code>&lt;input type="datetime-local"&gt;</code> 
+<code>&lt;input type="datetime-local"&gt;</code>
 
-<code>&lt;input type="date"&gt;</code> 
+<code>&lt;input type="date"&gt;</code>
 
-<code>&lt;input type="month"&gt;</code> 
+<code>&lt;input type="month"&gt;</code>
 
-<code>&lt;input type="time"&gt;</code> 
+<code>&lt;input type="time"&gt;</code>
 
-<code>&lt;input type="week"&gt;</code> 
+<code>&lt;input type="week"&gt;</code>
 
 <h2>Input de cor</h2>
 
-<code>&lt;input type="color"&gt;</code> 
+<code>&lt;input type="color"&gt;</code>
 
 <h2>Input booleano (sim ou não)</h2>
 
@@ -57,7 +57,7 @@
     &lt;input type="checkbox" name="musica" value="funk"&gt; Funk</code>
 <code>
     &lt;input type="checkbox" name="musica" value="pagode"&gt; Pagode
-</code> 
+</code>
 
 <code>
     &lt;input type="radio" name="sexo" value="feminino"&gt;
@@ -68,15 +68,15 @@
 
 <h2>Input de arquivo</h2>
 
-<code>&lt;input type="file" accept=".jpg,.jpeg,.gif"&gt;</code> 
+<code>&lt;input type="file" accept=".jpg,.jpeg,.gif"&gt;</code>
 
 <h2>Input de botão</h2>
 
-<code>&lt;input type="reset"&gt;</code> 
+<code>&lt;input type="reset"&gt;</code>
 
-<code>&lt;input type="button"&gt;</code> 
+<code>&lt;input type="button"&gt;</code>
 
-<code>&lt;input type="submit"&gt;</code> 
+<code>&lt;input type="submit"&gt;</code>
 
 <h2>Input de opções</h2>
 <code>
