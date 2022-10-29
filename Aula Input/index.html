@@ -8,26 +8,66 @@
     <link rel="stylesheet" href="style.css">
     <title>Tags de Inputs - Aula 6</title>
 </head>
-<body>
-    <div class="content">
-        <h1 class="center"><code>&lt;Input&gt;</code></h1>
+<body class="column">
+    <header class="container">
+        <h1 class="supertitle">Inputs & Buttons</h1>
+        <h2 class="supersubtitle">entradas de usuário</h2>
+        <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -40px;">
+    </header>
     
-        <h2>O que significa input?</h2>
-        <p>&emsp;Input é uma palavra do <i>inglês</i> que significa <strong>entrada</strong>.</p>
-        
-        <h2>Quando devo usar a tag input?</h2>
-        <p>&emsp;A tag input - <code>&lt;input&gt;</code> - é usada quando precisamos que <strong>o usuário entre com alguma informação</strong>: nome, e-mail, data, fotos e etc... Normalmente usadas dentro da tag &lt;form&gt;</p>
+    <div class="position-card">
+        <div class="card">
+            <div class="side-up">
+                <h2 class="title">Para que server?</h2>
+                <div class="line">
+                    <div class="full-line"></div>
+                </div>
+            </div>
+            <div class="side-down">
+                <div class="data-section">
+                    <p class="subtitle">Para que o usuário consiga entrar com alguma informação.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="side-up">
+                <h2 class="title">O que devo ficar atento?</h2>
+                <div class="line">
+                    <div class="full-line"></div>
+                </div>
+            </div>
+            <div class="side-down">
+                <div class="data-section">
+                    <p class="subtitle">Caso o input não seja de texto, você deve usar o atributo <code>type</code>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="side-up">
+                <h2 class="title">Alerta</h2>
+                <div class="line">
+                    <div class="full-line"></div>
+                </div>
+            </div>
+            <div class="side-down">
+                <div class="data-section">
+                    <p class="subtitle">Os inputs do tipo <code>range</code>, <code>radio</code> e <code>list</code> têm atributos obrigatórios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h2>O que devo ficar atento?</h2>
-        <p>&emsp;Caso o input não seja de texto, <strong>devo usar o atributo type</strong>.</p>
-
-        <h2>Anatomia de uma entrada de usuário</h2>
-        <img src="anatomia_input.png">
+    <div class="container">
+        <h2 class="supersubtitle" style="top: 0px;">Anatomia de uma entrada de usuário</h2>
+        <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
+        <img class="center" src="anatomia.png" width="460px" style="top: 20px;">    
     </div>
 
     <form action="" method="post">
         <div>
-            <h2>Input de textos</h2>
+            <h2 class="supersubtitle" style="top: 0px;">Input de texto</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
+
             <div class="demo">
                 <div class="code">
                     <code>&lt;input type="text" placeholder="Nome"&gt;</code> 
@@ -58,8 +98,9 @@
         </div>
 
         <div>    
-            <h2>Input de números</h2>
-            
+            <h2 class="supersubtitle" style="top: 0px;">Input de número</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
+ 
             <div class="demo">
                 <div class="code">
                     <code>&lt;input type="range" min="0" max="100" step="10"&gt;</code> 
@@ -83,7 +124,8 @@
         </div>
 
         <div>
-            <h2>Input de data</h2>
+            <h2 class="supersubtitle" style="top: 0px;">Input de data</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
             
             <div class="demo">
                 <div class="code">
@@ -122,7 +164,8 @@
         </div>
 
         <div>
-            <h2>Input de cor</h2>
+            <h2 class="supersubtitle" style="top: 0px;">Input de cor</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
 
             <div class="demo">
                 <div class="code">
@@ -132,8 +175,9 @@
             </div>
         </div>
         <div>
-            <h2>Input booleanos (sim ou não)</h2>
-            
+            <h2 class="supersubtitle" style="top: 0px;">Input booleano (sim ou não)</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
+
             <div class="demo">
                 <div class="code">
                     <code>
@@ -150,8 +194,8 @@
             <div class="demo padding">
                 <div class="code">
                     <code>
-                        &lt;input type="radio" name="sexo" value="feminino"&gt;<br>
-                        &lt;input type="radio" name="sexo" value="masculino"&gt;<br>
+                        &lt;input type="radio" name="sexo" value="feminino"&gt; Feminino<br>
+                        &lt;input type="radio" name="sexo" value="masculino"&gt; Masculino<br>
                     </code>
                 </div>
                 <div>
@@ -162,7 +206,8 @@
         </div>
 
         <div>
-            <h2>Input de arquivos</h2>
+            <h2 class="supersubtitle" style="top: 0px;">Input de arquivo</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
             
             <div class="demo">
                 <div class="code">
@@ -173,7 +218,8 @@
         </div>
 
         <div>
-            <h2>Input de botões</h2>
+            <h2 class="supersubtitle" style="top: 0px;">Input de botão</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
             
             <div class="demo">
                 <div class="code">
@@ -198,7 +244,8 @@
         </div>
 
         <div>
-            <h2>Input de opções</h2>
+            <h2 class="supersubtitle" style="top: 0px;">Input de opções</h2>
+            <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
             
             <div class="demo">
                 <div class="code">
@@ -222,15 +269,16 @@
             </div>
         </div>
     </form>
-    <div class="content">
-        <h2>Aprofundando o assunto</h2>
-        <p>&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso pode soar estranho e desnessário ao primeiro momento, mas isso é fruto de uma super habilidade que nós possuimos e o computador não: reconhecer o sentido das informações pelo contexto. <br>&emsp;Cada informação é entendida de acordo com o seu tipo. Nós, seres humanos, lemos informações de tipos diferentes automaticamente. Por exemplo, se eu te disser <strong>"Eu sou de 96"</strong>, você é plenamente capaz de <i>ler</i> e entender que "Eu sou de" é um texto e "96" se refere à abreviação do ano de 1996. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele consiga ler corretamente.</p>
-
+    <div class="container" style="width: 75vw;">
+        <h2 class="supersubtitle" style="top: 0px;">Aprofundando o assunto</h2>
+        <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
+        <p style="position: relative; left: 5px;">&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso pode soar estranho e desnessário ao primeiro momento, mas isso é fruto de uma super habilidade que nós possuimos e o computador não: reconhecer o sentido das informações pelo contexto. <br>&emsp;Cada informação é entendida de acordo com o seu tipo. Nós, seres humanos, lemos informações de tipos diferentes automaticamente. Por exemplo, se eu te disser <strong>"Eu sou de 96"</strong>, você é plenamente capaz de <i>ler</i> e entender que "Eu sou de" é um texto e "96" se refere à abreviação do ano de 1996. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele consiga ler corretamente.</p>
     </div>
 
-    <div class="content">
-        <h2>Atividade de fixação</h2>
-        <p>&emsp;Bora fazer um projeto para ver se você entendeu? O objetivo é replicar este <a href="fixacao.html">projeto</a>.</p>
+    <div class="container" style="width: 75vw;">
+        <h2 class="supersubtitle" style="top: 0px;">Atividade de fixação</h2>
+        <hr class="lineprincipal"size="0" width="1060px" style="position: relative; top: -5px;">
+        <p style="position: relative; left: 5px;">&emsp;Bora fazer um projeto para ver se você entendeu? O objetivo é replicar este <a href="fixacao.html">projeto</a>.</p>
     </div>
 </body>
 </html>

@@ -1,4 +1,125 @@
-body, form{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+body{
+    background-color: #100e17;
+    border: none;
+    margin: none;
+    gap: 30px;
+    color: white;
+}
+
+.position-card{
+    position: relative;
+    width: 70vw;
+    top: 0px;
+    left: 15vw;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    animation: 0.42 ease-out;
+}
+
+.side-up{
+    position: relative;
+    width: 100%;
+    left: 10%;
+    top: 8%;
+    height: 35%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-section{
+    position: relative;
+    top: 25px;
+    left: 60px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.line{
+    position: absolute;
+    top: 40px;
+    height: 5px;
+    width: 80%;
+    background-color: #2e3033;
+}
+
+
+.full-line {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, #DAFDBA 0%, #45C4B0 65%, #012030 100%);
+    transition: 0.4s ease-out;
+}
+
+.card:hover .full-line {
+    width: 100%;
+    transition: 0.6s ease-out;
+}
+
+.card:hover{
+    transform: translateY(-30px);
+    transition: 0.5 ease-out;
+}
+
+.side-down{
+    padding-top: 0%;
+}
+
+.data-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+.title, .subtitle, .supertitle, .supersubtitle, p, label{
+    position: relative;
+    top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.subtitle, p, label{
+    font-weight: 300;
+    font-size: medium;
+    text-align: justify;
+}
+
+.title{
+    font-size: larger;
+    font-weight: 500;
+}
+
+.supertitle{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.supersubtitle{
+    font-size: larger;
+    font-weight: 300;
+    top: -35px;
+}
+
+form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,16 +127,39 @@ body, form{
     align-items: center; 
 }
 
-.content{
+.row, .column{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center, .linear{
+    justify-content: center;
+    align-items: center;
+}
+
+.linear{
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.line-normal{
+    position: relative;
+    top: -10px;
     width: 55vw;
-    text-align: justify;
-    padding: 20px;
 }
 
-form{
-    padding: 20px;
+.block{
+    width: 55vw;
+    padding: 0px 10px;
 }
 
+form, form > hr{
+    padding: 20px;
+}
 
 .form > div{
     background-color: gray;
@@ -23,6 +167,7 @@ form{
 
 code{
     background-color: #E3E3E3;
+    color: #100e17;
     padding: 5px 8px;
     border-radius: 4px;
 }
@@ -30,6 +175,7 @@ code{
     display: grid;
     grid-template-columns: 40vw 15vw;
     padding-top: 5px;
+    margin-left: 10vw;
 }
 
 .padding{
@@ -49,14 +195,13 @@ code{
     justify-content: center;
 }
 
-.center, .linear{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+img{
+    width: 50vw;
+    position: relative;
+    left: 10vw;
 }
 
-.linear{
-    justify-content: flex-start;
-    gap: 10px;
+.container{
+    padding-left: 10vw;
+    width: 65vw;
 }
