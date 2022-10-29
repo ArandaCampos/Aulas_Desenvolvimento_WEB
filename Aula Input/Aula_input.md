@@ -2,7 +2,7 @@
 
 <h2>O que significa input?</h2>
 
-<p>&emsp;Input é uma palavra em <i>inglês</i> que significa <strong>entrada</strong>.</p>
+<p>&emsp;Input é uma palavra do <i>inglês</i> que significa <strong>entrada</strong>.</p>
 
 <h2>Quando devo usar a tag input?</h2>
 

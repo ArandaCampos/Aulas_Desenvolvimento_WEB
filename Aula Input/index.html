@@ -9,11 +9,11 @@
     <title>Tags de Inputs - Aula 6</title>
 </head>
 <body>
-    <h1>&lt;Input&gt;</h1>
-    
     <div class="content">
+        <h1 class="center"><code>&lt;Input&gt;</code></h1>
+    
         <h2>O que significa input?</h2>
-        <p>&emsp;Input é uma palavra em <i>inglês</i> que significa <strong>entrada</strong>.</p>
+        <p>&emsp;Input é uma palavra do <i>inglês</i> que significa <strong>entrada</strong>.</p>
         
         <h2>Quando devo usar a tag input?</h2>
         <p>&emsp;A tag input - <code>&lt;input&gt;</code> - é usada quando precisamos que <strong>o usuário entre com alguma informação</strong>: nome, e-mail, data, fotos e etc... Normalmente usadas dentro da tag &lt;form&gt;</p>
@@ -196,11 +196,41 @@
                 <input type="submit" id="submit">
             </div>
         </div>
+
+        <div>
+            <h2>Input de opções</h2>
+            
+            <div class="demo">
+                <div class="code">
+                    <code>
+                        &lt;input type="text" placeholder="Mc de sua preferência" list="mcs"&gt;<br>
+                        &lt;datalist id="mcs"&gt;<br>
+                        &emsp;&emsp;&lt;option value="Mc Hariel"&gt;<br>
+                        &emsp;&emsp;&lt;option value="Mc Paiva"&gt;<br>
+                        &emsp;&emsp;&lt;option value="Mc Ryan SP"&gt;<br>
+                        &lt;/datalist&gt;
+                    </code> 
+                </div>
+                <div>
+                    <input type="text" placeholder="Mc de sua preferência" list="mcs">
+                    <datalist id="mcs">
+                        <option value="Mc Hariel">
+                        <option value="Mc Paiva">
+                        <option value="Mc Ryan SP">
+                    </datalist>
+                </div>
+            </div>
+        </div>
     </form>
     <div class="content">
         <h2>Aprofundando o assunto</h2>
-        <p>&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso pode soar estranho e desnessário ao primeiro momento, mas isso é fruto de uma super habilidade que nós possuimos e o computador não: reconhecer o sentido das informações pelo contexto. <br>&emsp;Cada informação é lida de um jeito. Nós, seres humanos, lemos informações de tipos diferentes automaticamente. Por exemplo, se eu te disser <strong>"Eu sou de 96"</strong>, você é plenamente capaz de <i>ler</i> e entender que "Eu sou de" é um texto e "96" se refere à abreviação do ano de 1996. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele saiba ler corretamente.</p>
+        <p>&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso pode soar estranho e desnessário ao primeiro momento, mas isso é fruto de uma super habilidade que nós possuimos e o computador não: reconhecer o sentido das informações pelo contexto. <br>&emsp;Cada informação é entendida de acordo com o seu tipo. Nós, seres humanos, lemos informações de tipos diferentes automaticamente. Por exemplo, se eu te disser <strong>"Eu sou de 96"</strong>, você é plenamente capaz de <i>ler</i> e entender que "Eu sou de" é um texto e "96" se refere à abreviação do ano de 1996. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele consiga ler corretamente.</p>
 
+    </div>
+
+    <div class="content">
+        <h2>Atividade de fixação</h2>
+        <p>&emsp;Bora fazer um projeto para ver se você entendeu? O objetivo é replicar este <a href="fixacao.html">projeto</a>.</p>
     </div>
 </body>
 </html>

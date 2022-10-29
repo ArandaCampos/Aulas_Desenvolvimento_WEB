@@ -1,29 +1,25 @@
-body{
-    width: 100vw;
+body, form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center; 
 }
-/* 
-img{
-    width: 45vw;
-} */
 
 .content{
     width: 55vw;
     text-align: justify;
+    padding: 20px;
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+    padding: 20px;
 }
 
+
+.form > div{
+    background-color: gray;
+}
 
 code{
     background-color: #E3E3E3;
@@ -51,5 +47,16 @@ code{
 
 .demo > input, .demo > div{
     justify-content: center;
-    /* align-items: center; */
+}
+
+.center, .linear{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linear{
+    justify-content: flex-start;
+    gap: 10px;
 }
