@@ -93,7 +93,7 @@ body{
     margin-left: 10%;
 }
 
-.title, .subtitle, .supertitle, .supersubtitle, p, label{
+.title, .subtitle, .supertitle, .supersubtitle, p, label, a{
     position: relative;
     top: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -210,6 +210,8 @@ img{
 }
 
 a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: normal;
     color: whitesmoke;
-    background-color: #2e3033;
 }
