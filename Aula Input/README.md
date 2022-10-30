@@ -88,13 +88,10 @@
 &lt;/datalist&gt;
 </code>
 
-<hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 <p style="position: relative; left: 5px;">&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso soa estranho e desnessário, mas é por causa de uma habilidade que temos e o computador não: reconhecer o sentido das informações pelo contexto. Cada informação precisa ser lida e interpretada de acordo com o seu tipo para que faça sentido.<br>&emsp;Nós, seres humanos, lemos informações de tipos diferentes sem dificuldades. Por exemplo, se eu te disser <strong>"O Brasil foi campeão em 94"</strong>, você é plenamente capaz de <i>ler</i> e entender que "O Brasil foi campeão em" trata-se de um texto e "94" se refere ao ano de 1994. O mesmo não acontece com um computador, por isso devemos informar o tipo de informação para que ele consiga ler corretamente.</p>
 
 <h2 class="supersubtitle" style="top: 0px;">Atividade de fixação</h2>
-<hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 <p style="position: relative; left 5px;">&emsp;Responder exercícios após uma aula ajuda a fixar as informação na memória. Então bora fazer um <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXH27C3_1mQaJQq_1o8fKJoEcXv83iFaXWhenAEsn27QzvLw/viewform?usp=sf_link">teste</a> rápido?</p>
 
 <h2 class="supersubtitle" style="top: 0px;">Projeto</h2>
-<hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 <p style="position: relative; left: 5px;">&emsp;Bora fazer um projeto para ver se você entendeu? O objetivo é replicar este <a href="fixacao.html">projeto</a>.</p>
