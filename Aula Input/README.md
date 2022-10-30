@@ -14,7 +14,7 @@
 
 <h2>Anatomia de uma entrada de usuário</h2>
 
-<img src="anatomia.png">
+<img src="imagens/anatomia.png">
 
 <h2>Input de texto</h2>
 
