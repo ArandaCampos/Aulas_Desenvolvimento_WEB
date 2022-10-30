@@ -9,6 +9,20 @@ body{
     color: white;
 }
 
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #100e17;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:  whitesmoke;
+    border-radius: 3px;
+    /*border: 1px solid #45C4B0;*/
+}
+
 .position-card{
     position: relative;
     width: 70vw;
@@ -97,7 +111,7 @@ body{
     position: relative;
     top: 0px;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: whitesmoke;
 }
 
 .subtitle, p, label{
@@ -127,7 +141,7 @@ form{
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .row, .column{
