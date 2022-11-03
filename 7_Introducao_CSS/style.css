@@ -217,10 +217,10 @@ p, h1, h2, h3, h4, h5 {
     --width-card: 22vw;
     --height-card: 35vh;
     --gap-cards: 2vw;
-    --width-section: 80vw;
-    --padding-section: 20vw;
+    --width-section: 70vw;
+    --padding-section: 30vw;
     --gap-section: 50vw;
-    --width-carousel: 3600px;
+    --width-carousel: 200vw;
 }
 
 .position-card{
@@ -287,7 +287,7 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .visible{
-    width: 98vw;
+    width: 98.5vw;
     overflow: hidden;
     position: relative;
     top: -165px;
@@ -296,10 +296,8 @@ p, h1, h2, h3, h4, h5 {
 .carousel{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     position: relative;
-    /* left: -639px; */
     gap: var(--gap-section);
     width: var(--width-carousel);
 
@@ -381,10 +379,10 @@ section{
 
 @keyframes oneToTwo{
     from{
-        left: -13vw;
+        left: 0vw;
     }
     to{
-        left: calc(-1 * calc(103vw + var(--gap-section)));
+        left: -150vw;
     }
 }
 /*
@@ -399,10 +397,10 @@ section{
 
 @keyframes twoToOne{
     from{
-        left: calc(-1 * calc(103vw + var(--gap-section)));
+        left: -150vw;
     }
     to{
-        left: -13vw;
+        left: 0vw;
     }
 }
 /*
