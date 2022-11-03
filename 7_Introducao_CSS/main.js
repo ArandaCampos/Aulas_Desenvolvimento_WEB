@@ -9,7 +9,8 @@ const off = 'rgb(245, 245, 245)'
 var position = 1
 
 pageOne.style.backgroundColor = on
-
+context.style.animationName = 'twoToOne'
+            
 pageOne.addEventListener("click", function(event) {
     pageOne.style.backgroundColor = on
     switch (position){

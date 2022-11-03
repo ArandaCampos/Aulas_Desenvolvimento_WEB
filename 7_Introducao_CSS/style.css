@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
 .lineprincipal{
     width: 80vw;
 }
-/* 
+/*
 .full-line {
     position: absolute;
     top: 0px;
@@ -209,16 +209,17 @@ a{
     color: whitesmoke;
 }
 
-p, h1, h2, h3, h4, h5 { 
-    text-indent: 1.2rem; 
+p, h1, h2, h3, h4, h5 {
+    text-indent: 1.2rem;
 }
 
 :root{
-    --width-card: 300px;
-    --height-card: 200px;
-    --gap-cards: 20px;
-    --width-section: 796px;
-    --gap-section: 300px;
+    --width-card: 22vw;
+    --height-card: 35vh;
+    --gap-cards: 2vw;
+    --width-section: 80vw;
+    --padding-section: 20vw;
+    --gap-section: 50vw;
     --width-carousel: 3600px;
 }
 
@@ -251,7 +252,7 @@ p, h1, h2, h3, h4, h5 {
     width: 260px;
     background-color: #2e3033;
 }
-/* 
+/*
 .card:hover .full-line {
     width: 260px;
     transition: 0.6s ease-out;
@@ -286,11 +287,10 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .visible{
-    width: calc(100% - 118px);
+    width: 98vw;
     overflow: hidden;
     position: relative;
     top: -165px;
-    padding-left: 125px;
 }
 
 .carousel{
@@ -298,14 +298,11 @@ p, h1, h2, h3, h4, h5 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    width: var(--width-carousel);
-    /* overflow: hidden; */
-	/* padding: 80px; */
-    /* gap: var(--gap-section); */
-
     position: relative;
-    left: -630px;
+    /* left: -639px; */
+    gap: var(--gap-section);
+    width: var(--width-carousel);
+
     animation-duration: 0.8s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -315,10 +312,7 @@ section{
     display: flex;
     flex-direction: row;
     align-items: center;
-
-	/* overflow: hidden; */
-
-    padding: calc(var(--gap-section) / 2);
+	padding: calc(var(--padding-section) / 2);
     width: var(--width-section * 3 + --height-card * 2);
     gap: 2vw;
 }
@@ -335,7 +329,6 @@ section{
 .menu{
     position: relative;
     top: -320px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -345,8 +338,8 @@ section{
 }
 
 .circle{
-    height: 8px;
-    width: 8px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     background-color: #f5f5f5;
     box-shadow: -1rem 0 3rem #000;
@@ -388,13 +381,13 @@ section{
 
 @keyframes oneToTwo{
     from{
-        left: -650px;
+        left: -13vw;
     }
     to{
-        left: -1884px;
+        left: calc(-1 * calc(103vw + var(--gap-section)));
     }
 }
-/* 
+/*
 @keyframes oneToThree{
     from{
         left: 0px;
@@ -406,13 +399,13 @@ section{
 
 @keyframes twoToOne{
     from{
-        left: -1884px;
+        left: calc(-1 * calc(103vw + var(--gap-section)));
     }
     to{
-        left: -650px;
+        left: -13vw;
     }
 }
-/* 
+/*
 @keyframes twoToThree{
     from{
         left: -1255px;
