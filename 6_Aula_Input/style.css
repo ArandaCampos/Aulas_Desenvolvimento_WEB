@@ -33,6 +33,20 @@ body::-webkit-scrollbar-thumb {
     gap: 20px;
 }
 
+.hover-card{
+    height: 230px;
+    width: 300px;
+}
+
+.hover-card:hover > .card{
+    transform: translateY(-30px);
+    transition: 0.5 ease-out;
+}
+.hover-card:hover > .card > .side-up > .line > .full-line {
+    width: 100%;
+    transition: 0.6s ease-out;
+}
+
 .card{
     height: 200px;
     width: 300px;
@@ -84,15 +98,11 @@ body::-webkit-scrollbar-thumb {
     transition: 0.4s ease-out;
 }
 
-.card:hover .full-line {
-    width: 100%;
-    transition: 0.6s ease-out;
-}
-
+/* 
 .card:hover{
     transform: translateY(-30px);
     transition: 0.5 ease-out;
-}
+} */
 
 .side-down{
     padding-top: 0%;
@@ -213,7 +223,7 @@ code{
 }
 
 img{
-    width: 50vw;
+    width: 45vw;
     position: relative;
     left: 10vw;
 }

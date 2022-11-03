@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Renan Aranda Campos">
+    <meta name="description" content="Aula de introdução ao CSS com atividade de fixação e projeto">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 7 - Introdução ao CSS</title>
+</head>
+<body class="column">
+    <header class="container">
+        <h1 class="supertitle">Introdução ao CSS</h1>
+        <h2 class="supersubtitle">Cascading Style Sheets - Folhas de estilização em cascata</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -40px;">
+    </header>
+    <div class="visible">
+        <div class="carousel position-card">
+            <section class="section one">
+                <div class="hover-card">
+                    <div class="card">
+                        <div class="side-up">
+                            <h2 class="title" style="top: 20px;">&emsp;Para que server?</h2>
+                            <div class="line" style="top: 15px">
+                                <div class="full-line"></div>
+                            </div>
+                        </div>
+                        <div class="side-down">
+                            <div class="data-section">
+                                <p class="subtitle" style="top: 10px;">Para alterar todos os <strong>aspectos visuais</strong> (cor, tamanho, formato, posição, animações, etc...)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-card">
+                    <div class="card">
+                        <div class="side-up">
+                            <h2 class="title" style="top: 20px;">&emsp;Ponto de atenção I</h2>
+                            <div class="line" style="top: 15px">
+                                <div class="full-line"></div>
+                            </div>
+                        </div>
+                        <div class="side-down">
+                            <div class="data-section">
+                                <p class="subtitle" style="top: 10px;">A sintaxe (modo que escrevemos) é diferente do HTML.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-card">
+                    <div class="card">
+                        <div class="side-up">
+                            <h2 class="title" style="top: 20px;">&emsp;Ponto de atenção II</h2>
+                            <div class="line" style="top: 15px">
+                                <div class="full-line"></div>
+                            </div>
+                        </div>
+                        <div class="side-down">
+                            <div class="data-section">
+                                <p class="subtitle" style="top: 10px;">Seletor de classe deve iniciar com <strong>ponto final</strong><br><br>Ex: <strong>.nome-da-classe</strong></p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="section two">
+                <div class="hover-card">
+                    <div class="card">
+                        <div class="side-up">
+                            <h2 class="title" style="top: 20px;">&emsp;Ponto de atenção III</h2>
+                            <div class="line" style="top: 15px">
+                                <div class="full-line"></div>
+                            </div>
+                        </div>
+                        <div class="side-down">
+                            <div class="data-section">
+                                <p class="subtitle" style="top: 10px;">Seletor por identificaçao (ID) deve iniciar com <strong>jogo da velha</strong><br><br>Ex: <strong>#nome-do-id</strong></p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="hover-card">
+                    <div class="card">
+                        <div class="side-up">
+                            <h2 class="title" style="top: 20px;">&emsp;Ponto de atenção IV</h2>
+                            <div class="line" style="top: 15px">
+                                <div class="full-line"></div>
+                            </div>
+                        </div>
+                        <div class="side-down">
+                            <div class="data-section">
+                                <p class="subtitle" style="top: 10px;">Seletor por tag afeta <strong>todos os elementos que tenham aquela tag</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-card">
+                    <div class="card">
+                        <div class="side-up">
+                            <h2 class="title" style="top: 20px;">&emsp;Ponto de atenção V</h2>
+                            <div class="line" style="top: 15px">
+                                <div class="full-line"></div>
+                            </div>
+                        </div>
+                        <div class="side-down">
+                            <div class="data-section">
+                                <p class="subtitle" style="top: 10px;">Os seletores não muito parecidos, então fique atento.<br><br><strong>.nome</strong>&emsp;&ne;&emsp;<strong>#nome</strong>&emsp;&ne;&emsp;<strong>nome</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="center">
+        <div class="menu">
+            <div class="circle page-1"></div>
+            <div class="circle page-2"></div>
+        </div>
+    </div>
+
+    <div class="container"  style="position: relative; top: -350px; height: auto;">
+        <h2 class="supersubtitle" style="top: 0px;">Sintaxe do CSS</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <img class="anatomy" src="imagens/anatomia.png" style="top: 15px;">
+    </div>
+
+    <div class="container"  style="position: relative; top: -350px;">
+        <h2 class="supersubtitle">Seletores</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <p class="subtitle">Define quais elementos serão modificados.</p>
+    </div>
+    <div class="container" style="position: relative; top: -350px;">
+        <h2 class="supersubtitle" style="top: 0px;">Como selecionar um elemento HTML</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <div class="subtitle column" style="display: flex; align-items: center;">
+            <br>
+            <code style="margin-left: 8vw;">&lt;<strong>h1</strong> class="<strong>vermelho</strong>" id="<strong>red</strong>"&gt;Texto vermelho&lt;/h1&gt;</code>
+            <ul type="none" class="side-by-side" style="display: flex; align-items: center; gap: 15vw">
+                <li class="subtitle">
+                    <code><strong>h1</strong> {&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>&emsp;&emsp;&emsp;color: red;<br>&emsp;}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</code>
+                    <p style="font-size: 15px;">Por tag</p>
+                </li>
+                <li class="subtitle">
+                    <code><strong>.vermelho</strong> {&emsp;&emsp;<br>&emsp;&emsp;color: red;&emsp;<br>&emsp;}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</code>
+                    <p style="font-size: 15px;">Por classe</p>
+                </li>
+                <li class="subtitle">
+                    <code><strong>#red</strong> {&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>&emsp;&emsp;color: red;&emsp;<br>&emsp;}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</code>
+                    <p style="font-size: 15px;">Por Id</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" style="position: relative; top: -360px;">
+        <h2 class="supersubtitle" style="top: 0px;">Principais parâmetros</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <p>De texto</p>
+        <div class="demo">
+            <div class="code">
+                <code>color: red;</code>
+            </div>
+            <div style="height: 20px;position: relative; top: -15px;">
+                <p style="color: red;">color</p>
+            </div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>text-align: start;</code>
+            </div>
+            <div style="height: 20px;position: relative; top: -15px;">
+                <p style="text-align: start;">start</p>
+            </div>
+        </div>
+        <div class="demo">
+            <div class="code">
+                <code>text-align: center;</code>
+            </div>
+            <div style="height: 20px;position: relative; top: -15px;">
+                <p style="text-align: center;">center</p>
+            </div>
+        </div>
+        <div class="demo">
+            <div class="code">
+                <code>text-align: end;</code>
+            </div>
+            <div style="height: 20px;">
+                <p style="text-align: end;position: relative; top: -15px;">end</p>
+            </div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>font-family: Arial;</code>
+            </div>
+            <div style="height: 20px;position: relative; top: -15px;">
+                <p style="font-family: Arial;">Arial</p>
+            </div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>font-weight: lighter;</code>
+            </div>
+            <div style="height: 20px; position: relative; top: -15px;">
+                <p style="font-weight: lighter">Lighter</p>
+            </div>
+        </div>
+        <div class="demo">
+            <div class="code">
+                <code>font-weight: normal;</code>
+            </div>
+            <div style="height: 20px; position: relative; top: -15px;">
+                <p style="font-weight: normal">Normal</p>
+            </div>
+        </div>
+        <div class="demo" style="height: 20px">
+            <div class="code">
+                <code>font-weight: bold;</code>
+            </div>
+            <div style="height: 20px; position: relative; top: -15px;">
+                <p style="font-weight: bold;">Bold</p>
+            </div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>font-style: italic;</code>
+            </div>
+            <div style="height: 20px; position: relative; top: -15px;">
+                <p style="font-style: italic;">italic</p>
+            </div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>letter-spacing: 2px;</code>
+            </div>
+            <div style="height: 20px; position: relative; top: -15px;">
+                <p style="letter-spacing: 4px;">letter-spacing</p>
+            </div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>font-size: 25px;</code>
+            </div>
+            <div style="height: 40px; position: relative; top: -15px;">
+                <p style="font-size: 25px;">font-size</p>
+            </div>
+        </div>
+        <p>De fundo</p>
+        <div class="demo">
+            <div class="code">
+                <code>background: red;</code>
+            </div>
+            <div style="height: 20px; background-color: red;"></div>
+        </div>
+        <br>
+        <div class="demo">
+            <div class="code">
+                <code>background-image: url("../imagens/imagem.png");</code>
+            </div>
+            <div style="height: 30px; background-image: url('imagens/imagem2.png');"></div>
+        </div>
+        <br>
+        <p>De tratamento de imagens</p>
+        <div class="demo">
+            <div class="code" style="height: 25px">
+                <code>opacity: 0.9;</code>
+            </div>
+            <div>
+                <img src="imagens/imagem.png" height="40px" style="opacity: 0.9;">
+            </div>
+        </div>
+        <div class="demo">
+            <div class="code" style="height: 25px">
+                <code>opacity: 0.5;</code>
+            </div>
+            <div>
+                <img src="imagens/imagem.png" height="40px" style="opacity: 0.5;">
+            </div>
+        </div>
+        <div class="demo">
+            <div class="code" style="height: 25px">
+                <code>opacity: 0.1;</code>
+            </div>
+            <div>
+                <img src="imagens/imagem.png" height="40px" style="opacity: 0.1;">
+            </div>
+        </div>
+        <br>
+        <p>De borda</p>
+        <div class="demo">
+            <div class="code" style="height: 25px">
+                <code>border: 2px solid yellow;</code>
+            </div>
+            <div>
+                <img src="imagens/imagem.png" height="40px" style="border: 2px solid yellow;">
+            </div>
+        </div>
+        <div class="demo">
+            <div class="code" style="height: 25px">
+                <code>border-radius: 50%;</code>
+            </div>
+            <div>
+                <img src="imagens/imagem.png" height="40px" style="border-radius: 50%;">
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container" style="width: 75vw; position: relative; top: -300px;"">
+        <h2 class="supersubtitle" style="top: 0px;">Bora praticar?</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <ol type="I">
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDAKsu1wiYQQWmeqjMvhcow9mOBomdjCnpFpFq8QL5S3xW6g/viewform?usp=sf_link" target="_blank" rel="noreferrer">Atividade de fixação</a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq9uiTimuL1-jGLrAe_v9wO_ilJPd490WrjKo7yRIfSA2zuQ/viewform?usp=sf_link" target="_blank" rel="noreferrer">Exit Ticket</a>
+            </li>
+        </ol>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
