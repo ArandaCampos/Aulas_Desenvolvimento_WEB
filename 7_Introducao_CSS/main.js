@@ -8,6 +8,10 @@ const off = 'rgb(245, 245, 245)'
 
 var position = 1
 
+var altura = window.screen.height;
+var largura = window.screen.width;
+
+console.log(altura, largura)
 pageOne.style.backgroundColor = on
 context.style.animationName = 'twoToOne'
             

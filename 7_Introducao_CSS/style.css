@@ -1,14 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 
-:root{
-    --width-card: 22vw;
-    --height-card: 35vh;
-    --gap-cards: 2vw;
-    --width-section: 70vw;
-    --padding-section: 30vw;
-    --gap-section: 50vw;
-    --width-carousel: 200vw;
+/* > 800 */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    :root{
+        --width-card: 52vmin;
+        --height-card: 35vmin;
+        --gap-cards: 4vmin;
+        --width-section: 157vmin;
+        --padding-section: 30vmin;
+        --gap-section: 50vmin;
+        --width-carousel: 200vmin;
+        /* width * 3 + gap * 2 + gap_section + padding  */
+        --move-2: -248vmin;
+        --top-menu: -55vmin;
+    }
+}
+
+/* <= 800px */
+@media screen and (min-width: 1400px) {
+    :root{
+        --width-card: 40vmin;
+        --height-card: 35vmin;
+        --gap-cards: 8vmin;
+        --width-section: 70vmin;
+        --padding-section: 35vmin;
+        --gap-section: 50vmin;
+        --width-carousel: 200vmin;
+        /* width * 3 + gap * 2 + gap_section + padding  */
+        --move-2: -220vmin;
+        --top-menu: -55vmin;
+    }
 }
 
 body{
@@ -31,50 +53,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color:  whitesmoke;
     border-radius: 3px;
-    /*border: 1px solid #45C4B0;*/
 }
-
-/* .position-card{
-    position: relative;
-    width: 70vw;
-    top: 0px;
-    left: 14vw;
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-*/
-.hover-card{
-    height: 230px;
-    width: 300px;
-}
-
-.hover-card:hover > .card{
-    transform: translateY(-30px);
-    transition: 0.5 ease-out;
-}
-.hover-card:hover > .card > .side-up > .line > .full-line {
-    width: 100%;
-    transition: 0.6s ease-out;
-}
-/*
-.card{
-    height: 200px;
-    width: 300px;
-    border-radius: 20px;
-    background-color: #17141d;
-    box-shadow: -1rem 0 3rem #000;
-    animation: 0.42 ease-out;
-}
-
-.side-up{
-    position: relative;
-    width: 100%;
-    left: 10%;
-    top: 8%;
-    height: 35%;
-    border-radius: 20px 20px 0px 0px;
-} */
 
 .img-section{
     position: relative;
@@ -206,10 +185,58 @@ p, h1, h2, h3, h4, h5 {
     display: flex;
     flex-direction: row;
 }
+.hover-card{
+    height: calc(var(--height-card) * 1.18);
+    min-height: 220px;
+    width: var(--width-card);
+    min-width: 300px;
+    border-radius: 10px;
+    background-color: red;
+}
 
+.hover-card:hover > .card{
+    transform: translateY(calc(var(--height-card) * -0.1));
+    transition: 0.5 ease-out;
+}
+.hover-card:hover > .card > .side-up > .line > .full-line {
+    width: 100%;
+    transition: 0.6s ease-out;
+}
+
+.visible{
+    width: 98.5vw;
+    height: 65vh;
+    min-height: calc(var(--padding-section) * 2 + 220px);
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: var(--gap-section);
+    width: var(--width-carousel);
+    position: relative;
+
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding: 22vh 0 0 15vw;
+    gap: var(--gap-cards);
+    height: 14vh;
+}
 .card{
     height: var(--height-card);
+    min-height: 220px;
     width: var(--width-card);
+    min-width: 300px;
     border-radius: 20px;
     background-color: #17141d;
     box-shadow: -1rem 0 3rem #000;
@@ -228,7 +255,8 @@ p, h1, h2, h3, h4, h5 {
     top: 5px;
     left: 2vw;
     height: 5px;
-    width: 18vw;
+    width: calc(var(--width-card) - 4vw);
+    min-width: calc(300px - 4vw);
     background-color: #2e3033;
 }
 
@@ -255,37 +283,6 @@ p, h1, h2, h3, h4, h5 {
     align-items: flex-start;
 }
 
-.visible{
-    width: 98.5vw;
-    height: 65vh;
-    min-height: 60vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: var(--gap-section);
-    width: var(--width-carousel);
-    position: relative;
-
-    animation-duration: 0.8s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-
-section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-	padding: 22vh 0 0 15vw;
-    /* width: calc(var(--width-section) * 2 + var(--height-card) * 1); */
-    gap: 2vw;
-    height: 14vh;
-}
-
 .center{
     width: 100%;
     display: flex;
@@ -301,7 +298,7 @@ section{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -150px;
+    top: var(--top-menu);
 
     gap: 8px;
 }
@@ -323,7 +320,6 @@ img{
     transition-timing-function: ease-in-out;
     transition: height 2s;
 }
-
 
 img:hover{
     height: 60vh;
@@ -364,13 +360,13 @@ img:hover{
         left: 0vw;
     }
     to{
-        left: -135vw;
+        left: var(--move-2);
     }
 }
 
 @keyframes twoToOne{
     from{
-        left: -135vw;
+        left: var(--move-2);
     }
     to{
         left: 0vw;
