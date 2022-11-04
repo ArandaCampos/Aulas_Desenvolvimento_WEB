@@ -126,11 +126,18 @@ code{
     padding: 5px 8px;
     border-radius: 4px;
 }
-.side-by-side{
+
+.side-by-side2, .side-by-side{
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw;
     padding-top: 5px;
     margin-left: 8vw;
+}
+.side-by-side{
+    grid-template-columns: 20vw 20vw 20vw;
+}
+
+.side-by-side2{
+    grid-template-columns: 30vw 30vw;
 }
 .demo{
     display: grid;
@@ -317,20 +324,53 @@ section{
 }
 
 img{
+    width: auto;
+}    
+
+.img-scale{
     transition: scale 0.4s;
     transition-timing-function: ease-in-out;
     transition: height 2s;
 }
 
-img:hover{
+.img-scale:hover{
     height: 60vh;
 }
 
-.title, .subtitle, .supertitle, .supersubtitle, p, label, a{
+figure{
+    width: 35vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+figure > figcaption{
+    visibility: hidden;
+    text-align: center;
+    position: relative;
+    top: -50%;
+    width: 100%;
+}
+
+figure:hover > img{
+    filter: brightness(0.05);  
+}
+
+figure:hover > figcaption{
+    visibility: visible;
+}
+
+.title, .subtitle, .supertitle, .supersubtitle, p, label, a, figcaption{
     position: relative;
     top: 0px;
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke;
+}
+
+figcaption{
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .subtitle, p, label{

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Aula 7 - Introdução ao CSS</title>
+    <title>Introdução à CSS</title>
 </head>
 <body class="column">
     <header class="container" style="height: 230px; top: 10px;">
@@ -37,14 +37,14 @@
                     <div class="hover-card">
                         <div class="card">
                             <div class="side-up">
-                                <h2 class="title" style="top: 20px;">&emsp;Qual arquivo é css?</h2>
+                                <h2 class="title" style="top: 20px;">&emsp;Cadê o arquivo é css?</h2>
                                 <div class="line" style="top: 15px">
                                     <div class="full-line"></div>
                                 </div>
                             </div>
                             <div class="side-down">
                                 <div class="data-section">
-                                    <p class="subtitle" style="top: 10px;">Todo arquivo css termina com a extensão <code>.css</code></p>
+                                    <p class="subtitle" style="top: 10px;">Todo arquivo css termina com a extensão <code>.css</code>.</p>
                                 </div>
                             </div>
                         </div>
@@ -52,14 +52,14 @@
                     <div class="hover-card">
                         <div class="card">
                             <div class="side-up">
-                                <h2 class="title" style="top: 20px;">&emsp;Como lincar o css?</h2>
+                                <h2 class="title" style="top: 20px;">&emsp;Como linco meu css?</h2>
                                 <div class="line" style="top: 15px">
                                     <div class="full-line"></div>
                                 </div>
                             </div>
                             <div class="side-down">
                                 <div class="data-section">
-                                    <p class="subtitle" style="top: 10px;">No arquivo com extensão <code>.html</code>, dentro da tag <code>&lt;head&gt;</code> com a tag <code>&lt;link&gt;</code></p>
+                                    <p class="subtitle" style="top: 10px;">Escolha a página que deseja estilizar e, dentro da tag <code>&lt;head&gt;</code>, utilize a tag <code>&lt;link&gt;</code>.</p>
                                 </div>
                             </div>
                         </div>
@@ -84,14 +84,14 @@
                     <div class="hover-card">
                         <div class="card">
                             <div class="side-up">
-                                <h2 class="title" style="top: 20px;">&emsp;Identificadores</h2>
+                                <h2 class="title" style="top: 20px;">&emsp;Seletor por ID</h2>
                                 <div class="line" style="top: 15px">
                                     <div class="full-line"></div>
                                 </div>
                             </div>
                             <div class="side-down">
                                 <div class="data-section">
-                                    <p class="subtitle" style="top: 10px;">Seletor por identificaçao (ID) deve iniciar com <strong>jogo da velha</strong><br><br>Ex: <strong>#nome-do-id</strong></p>
+                                    <p class="subtitle" style="top: 10px;">Seletor por identificação (ID) deve iniciar com <strong>jogo da velha</strong>.<br><br>Ex: <strong>#nome-do-id</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                             </div>
                             <div class="side-down">
                                 <div class="data-section">
-                                    <p class="subtitle" style="top: 10px;">Seletor por tag afeta <strong>todos os elementos que tenha aquela tag</strong></p>
+                                    <p class="subtitle" style="top: 10px;">Seletor por tag afeta <strong>todos os elementos que utilizem aquela tag</strong>.</p>
                                 </div>
                             </div>
                         </div>
@@ -116,38 +116,68 @@
         </div>
         <div class="center">
             <div class="menu">
-                <div class="circle page-1"></div>
-                <div class="circle page-2"></div>
+                <div class="circle page-1" onclick="page_1()"></div>
+                <div class="circle page-2" onclick="page_2()"></div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <h2 class="supersubtitle" style="top: 0px;">Evolução estética na WEB.</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <div class="side-by-side2" style="gap: 4vw; position: relative; top: -20px;">
+            <figure style="gap: 10px; width: 30vw;">
+                <img class="center caption-img" src="imagens/site_antigo.jpg" style="position: relative; top: 30px; height: 16vw;">
+                <figcaption style="top: -28%; left: -5%"><strong>Yahoo - 1992</strong></figcaption>
+            </figure>
+            <figure style="gap: 10px; width: 30vw;">
+                <img class="center caption-img" src="imagens/site_2022.png" style="position: relative; top: 30px; height: 13vw;">
+                <figcaption style="top: -24%;"><strong>Yahoo - 2022</strong></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="supersubtitle" style="top: 0px;">Håkon Wium Lie e Bert Bos</h2>
+        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+        <div class="side-by-side2" style="gap: 4vw;">
+            <figure style="gap: 10px; width: 30vw;">
+                <img class="center caption-img" src="imagens/hakon_wium_lie.jpg" style="position: relative; top: 30px; width: 30vw; height: 25vw;">
+                <figcaption><strong>Håkon Wium Lie</strong></figcaption>
+            </figure>
+            <figure style="gap: 10px; width: 30vw;">
+                <img class="center caption-img" src="imagens/bert_bos2.jpeg" style="position: relative; top: 25px; width: 30vw; height: 25vw;">
+                <figcaption><strong>Bert Bos</strong></figcaption>
+            </figure>
+        </div>
+        <p class="subtitle" style="top: 10px;">Misturar estilo e estrutura não era mais interessante, e foi assim que em <strong>1995</strong>, <strong>Håkon Wium Lie e Bert Bos</strong> apresentaram a proposta do CSS(Cascading Style Sheets) que logo foi apoiada pela W3C. A idéia geral era, <strong>utilizar HTML somente para estruturar o website e a tarefa de apresentação fica com o CSS disposto em um arquivo separado .css</strong> ou no proprio HTML demarcado pelas tags.<br><br>&emsp;&emsp;<cite>fonte: devmedia</cite></p>
     </div>
 
     <div class="container"  style="max-height: 250px;">
         <h2 class="supersubtitle" style="top: 0px;">Como inserir minha estilização na página?</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <img class="anatomy" src="imagens/link.png" style="top: 15px;"><br><br>
+        <img class="anatomy img-scale" src="imagens/link.png" style="top: 15px;"><br><br>
         <div class="center"><code>&lt;link href="style.css" rel="stylesheet" type="text/css"&gt;</code></div>
     </div>
 
     <div class="container"  style="position: relative; top: -100px; height: auto;">
         <h2 class="supersubtitle" style="top: 0px;">Cadê o arquivo <code>css</code>?</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <img class="anatomy" src="imagens/file.png" style="top: 15px;">
+        <img class="anatomy img-scale" src="imagens/file.png" style="top: 15px;">
     </div>
 
     <div class="container"  style="position: relative; top: -100px; height: auto;">
         <h2 class="supersubtitle" style="top: 0px;">Sintaxe do CSS</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <img class="anatomy" src="imagens/anatomia.png" style="top: 15px;">
+        <img class="anatomy img-scale" src="imagens/anatomia.png" style="top: 15px;">
     </div>
 
     <div class="container" style="position: relative; top: -100px;">
         <h2 class="supersubtitle" style="top: 0px;">Como <strong>selecionar</strong> um elemento no css</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <img class="anatomy" src="imagens/seletores.png" style="top: 15px; height: 35vh;">    
+        <img class="anatomy img-scale" src="imagens/seletores.png" style="top: 15px; height: 35vh;">    
     </div>
     <div class="container" style="position: relative; top: -100px;">
-        <h2 class="supersubtitle" style="top: 0px;">Principais parâmetros</h2>
+        <h2 class="supersubtitle" style="top: 0px;">Principais atributos</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
         <p>De texto</p>
         <div class="demo">
