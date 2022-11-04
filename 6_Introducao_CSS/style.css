@@ -130,9 +130,9 @@ code{
 .side-by-side2, .side-by-side{
     display: grid;
     padding-top: 5px;
-    margin-left: 8vw;
 }
 .side-by-side{
+    margin-left: 8vw;
     grid-template-columns: 20vw 20vw 20vw;
 }
 
@@ -334,7 +334,7 @@ img{
 }
 
 .img-scale:hover{
-    height: 60vh;
+    height: 65vh;
 }
 
 figure{
