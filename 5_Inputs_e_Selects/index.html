@@ -3,56 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Renan Aranda Campos">
-    <meta name="description" content="Material didático sobre a tag input. Inclui atividade de fixação e um desafio">
+    <meta name="description" content="Material didático sobre inputs e selects. Inclui atividade de fixação e um desafio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tags de Inputs - Aula 6</title>
+    <title>Inputs e Selects</title>
 </head>
 <body class="column">
     <header class="container">
-        <h1 class="supertitle">Inputs - Aula 6</h1>
-        <h2 class="supersubtitle">entradas de usuário</h2>
+        <h1 class="supertitle">Inputs e Selects</h1>
+        <h2 class="supersubtitle">Capítulo 5</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -40px;">
     </header>
 
     <div class="position-card">
-        <div class="card">
-            <div class="side-up">
-                <h2 class="title">Para que server?</h2>
-                <div class="line">
-                    <div class="full-line"></div>
+        <div class="hover-card">
+            <div class="card">
+                <div class="side-up">
+                    <h2 class="title">Para que server?</h2>
+                    <div class="line">
+                        <div class="full-line"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="side-down">
-                <div class="data-section">
-                    <p class="subtitle">Para que o usuário consiga entrar com alguma informação.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="side-up">
-                <h2 class="title">Ponto de atenção I</h2>
-                <div class="line">
-                    <div class="full-line"></div>
-                </div>
-            </div>
-            <div class="side-down">
-                <div class="data-section">
-                    <p class="subtitle">O atributo <code>type</code> deve sempre ser preenchido.</p>
+                <div class="side-down">
+                    <div class="data-section">
+                        <p class="subtitle">Para que o usuário consiga entrar com alguma informação.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="side-up">
-                <h2 class="title">Ponto de atenção II</h2>
-                <div class="line">
-                    <div class="full-line"></div>
+        <div class="hover-card">
+            <div class="card">
+                <div class="side-up">
+                    <h2 class="title">Ponto de atenção I</h2>
+                    <div class="line">
+                        <div class="full-line"></div>
+                    </div>
+                </div>
+                <div class="side-down">
+                    <div class="data-section">
+                        <p class="subtitle">O atributo <code>type</code> deve sempre ser preenchido.</p>
+                    </div>
                 </div>
             </div>
-            <div class="side-down">
-                <div class="data-section">
-                    <p class="subtitle">Os inputs do tipo <code>range</code>, <code>radio</code> e <code>list</code> têm atributos obrigatórios.</p>
+        </div>
+        <div class="hover-card">
+            <div class="card">
+                <div class="side-up">
+                    <h2 class="title">Ponto de atenção II</h2>
+                    <div class="line">
+                        <div class="full-line"></div>
+                    </div>
+                </div>
+                <div class="side-down">
+                    <div class="data-section">
+                        <p class="subtitle">Os inputs do tipo <code>range</code>, <code>radio</code> e <code>list</code> têm atributos obrigatórios.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,7 +72,17 @@
 
     <form action="" method="post">
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de texto</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Label</h2>
+            <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+
+            <div class="demo">
+                <div class="code">
+                    <code>&lt;label&gt;Nome: &lt;/label&gt;</code>
+                </div>
+                <label>Nome: </label>
+            </div>
+        <div>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de texto</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -99,7 +115,7 @@
         </div>
 
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de número</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de número</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -125,7 +141,7 @@
         </div>
 
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de data</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de data</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -165,7 +181,7 @@
         </div>
 
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de cor</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de cor</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -176,7 +192,7 @@
             </div>
         </div>
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input booleano (sim ou não)</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input booleano (sim ou não)</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -207,7 +223,7 @@
         </div>
 
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de arquivo</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de arquivo</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -219,7 +235,7 @@
         </div>
 
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de botão</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de botão</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -245,7 +261,7 @@
         </div>
 
         <div>
-            <h2 class="supersubtitle" style="top: 0px;">Input de opções</h2>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Input de opções</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
 
             <div class="demo">
@@ -269,14 +285,39 @@
                 </div>
             </div>
         </div>
+        <div>
+            <h2 class="supersubtitle" style="top: 0px; left: 0px;">Select</h2>
+            <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
+
+            <div class="demo">
+                <div class="code">
+                    <code>
+                        &lt;select name="musicas"&gt;<br>
+                        &emsp;&emsp;&lt;option value="Giro loco"&gt;Giro loco&lt;/option&gt;<br>
+                        &emsp;&emsp;&lt;option value="Outfit valioso"&gt;Outfit valioso&lt;/option&gt;<br>
+                        &emsp;&emsp;&lt;option value="O fim é triste"&gt;O fim é triste&lt;/option&gt;<br>
+                       &lt;/select&gt;
+                    </code>
+                </div>
+                <div>
+                    <select name="musicas">
+                        <option value="Giro loco" select>Giro loco</option>
+                        <option value="Outfit valioso">Outfit valioso</option>
+                        <option value="O fim é triste">O fim é triste</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
     </form>
-    <div class="container" style="width: 75vw;">
+<br>
+    <div class="container" style="width: 75vw; padding-left: 0;">
         <h2 class="supersubtitle" style="top: 0px;">Aprofundando o assunto</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
         <p style="position: relative; left: 5px;">&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso soa estranho e desnessário, mas é por causa de uma habilidade que temos e o computador não: reconhecer o sentido das informações pelo contexto.<br>&emsp;Para que cada informação faça sentido, precisamos ler e interpretar conforme o seu tipo. E, nós, seres humanos, fazemos isso o tempo todo sem dificuldades. Por exemplo, se eu te disser <strong>"O Brasil foi campeão em 94"</strong>, você é plenamente capaz de <i>ler</i> e entender que "O Brasil foi campeão em" trata-se de um texto e "94" se refere ao ano de 1994. O mesmo não acontece com um computador, por isso devemos informar o tipo para que ele consiga ler corretamente.</p>
     </div>
 
-    <div class="container" style="width: 75vw;">
+    <div class="container" style="width: 75vw; padding-left: 0;">
         <h2 class="supersubtitle" style="top: 0px;">Bora praticar?</h2>
         <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
         <ol type="I">
