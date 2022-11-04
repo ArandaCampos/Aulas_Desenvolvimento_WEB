@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 
-/* > 800 */
+/* screen pc */
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
     :root{
         --width-card: 52vmin;
@@ -17,7 +17,7 @@
     }
 }
 
-/* <= 800px */
+/* screen tv */
 @media screen and (min-width: 1400px) {
     :root{
         --width-card: 40vmin;
@@ -166,6 +166,8 @@ code{
 .container{
     padding-left: 10vw;
     width: 65vw;
+    position: relative;
+    top: var(--top-menu);
 }
 
 a{
@@ -191,7 +193,6 @@ p, h1, h2, h3, h4, h5 {
     width: var(--width-card);
     min-width: 300px;
     border-radius: 10px;
-    background-color: red;
 }
 
 .hover-card:hover > .card{
