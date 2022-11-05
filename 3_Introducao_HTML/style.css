@@ -75,6 +75,30 @@ body::-webkit-scrollbar-thumb {
     background-color: whitesmoke;
 }
 
+figure{
+    width: 35vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+figure > figcaption{
+    visibility: hidden;
+    text-align: center;
+    position: relative;
+    top: -50%;
+    width: 100%;
+}
+
+figure:hover > img{
+    filter: brightness(0.05);  
+}
+
+figure:hover > figcaption{
+    visibility: visible;
+}
+
 .line{
     position: absolute;
     top: 40px;
@@ -117,7 +141,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: 10%;
 }
 
-.title, .subtitle, .supertitle, .supersubtitle, p, label, a{
+.title, .subtitle, .supertitle, .supersubtitle, p, label, a, figcaption{
     position: relative;
     top: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -144,6 +168,20 @@ body::-webkit-scrollbar-thumb {
     font-size: larger;
     font-weight: 300;
     top: -35px;
+}
+
+figcaption{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.img-scale{
+    transition-timing-function: ease-in-out;
+    transition: height 2s;
+}
+
+.img-scale:hover{
+    height: 65vh;
 }
 
 form{
