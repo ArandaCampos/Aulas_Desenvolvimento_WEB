@@ -161,7 +161,7 @@ figure:hover > figcaption{
 
 .supertitle{
     font-size: 5rem;
-    font-weight: 500;;
+    font-weight: 500;
 }
 
 .supersubtitle{
@@ -267,8 +267,11 @@ img{
 }
 
 .container{
-    padding-left: 10vw;
-    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw; 
+    width: 80vw;
 }
 
 a{
