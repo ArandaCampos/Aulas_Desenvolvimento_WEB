@@ -325,7 +325,7 @@ section{
 
 img{
     width: auto;
-}    
+}
 
 .img-scale{
     transition: scale 0.4s;
@@ -342,7 +342,7 @@ figure{
     height: 25vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
 }
 
 figure > figcaption{
@@ -354,7 +354,7 @@ figure > figcaption{
 }
 
 figure:hover > img{
-    filter: brightness(0.05);  
+    filter: brightness(0.05);
 }
 
 figure:hover > figcaption{

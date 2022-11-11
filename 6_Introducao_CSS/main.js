@@ -28,4 +28,19 @@ const page_2 = () => {
     }
 }
 
+
+// const codes = document.querySelector('#copy')
+// codes.addEventListener('click', (event) =>{
+
+//    console.log(event.innerText)
+//    const code = document.querySelector("#copy")
+//    try {
+//        navigator.clipboard.writeText(code.innerText);
+//        alert("Texto copiado!")
+//    } catch (err) {
+//        console.log('Oops, unable to copy');
+//        alert("Copie para área de transferência: Ctrl+C e tecle Enter", print.innerText);
+//    }
+//})
+
 init()
