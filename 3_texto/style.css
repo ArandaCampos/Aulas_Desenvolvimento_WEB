@@ -72,6 +72,11 @@ img{
     width: 100%;
 }
 
+a > img{
+    width: 20px;
+    margin-top: calc(50% + 5px);
+}
+
 figure > img{
     position: relative;
     top: 0; bottom: 0;
@@ -244,6 +249,13 @@ nav > a:hover, li > a:hover{
 .margin-30{
     margin: 20px 30px 90px 30px;
 }
+
+/* Posicionamento */
+.top-80{
+    position: relative;
+    top: -80%;
+}
+
 /* Desenhos */
 
 .card{
