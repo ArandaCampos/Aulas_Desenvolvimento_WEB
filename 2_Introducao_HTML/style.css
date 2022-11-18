@@ -122,12 +122,6 @@ figure:hover > figcaption{
     transition: 0.4s ease-out;
 }
 
-/* 
-.card:hover{
-    transform: translateY(-30px);
-    transition: 0.5 ease-out;
-} */
-
 .side-down{
     padding-top: 0%;
 }
