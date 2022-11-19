@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Capítulo 1 - Somas</title>
+    <title>Capítulo 3 - Somas</title>
 </head>
 <body class="column">
     <aside class="row">
-        <p><strong>Capítulo 1</strong></p>
+        <p><strong>Capítulo 3</strong></p>
         <nav>
             <a href="#inicio">Início</a>
             <a href="#html">Inserindo</a>
@@ -21,14 +21,14 @@
     </aside>
     <header class="container gap-50 margin-50-30 padding-3">
         <div>
-            <h1 class="super-title">Título, subtítulo e parágrafo.</h1>
-            <h2 class="super-subtitle">&emsp;Os primeiros passos na programação WEB.</h2>
+            <h1 class="super-title">Botão.</h1>
+            <h2 class="super-subtitle">&emsp;Permitindo que o usuário tome decisões na WEB.</h2>
         </div>
+        <!-- PAREI AQUI -->
         <div>
             <section class="illustration">
                 <span class="linear-center" style="vertical-align: middle; height: 100%">
-                    <p class="text-typing"></p>
-                    <p class="animation-type" id="bar" >|</p>
+                    <img src="imagens/illustration.png">
                 </span>
             </section>
         </div>
@@ -37,15 +37,15 @@
         <div class="row center gap-50 padding-3 margin-50-30" id="inicio">
             <div class="column card padding-2 bg-principal shadow-principal">
                 <h3 class="title-card txt-left">&emsp;O que vamos aprender</h3>
-                <p class="subtitle-card txt-left">&emsp;<strong>Inserir e estilizar textos</strong> na WEB.</p>
+                <p class="subtitle-card txt-left">&emsp;<strong>Inserir e estilizar links</strong> na WEB.</p>
             </div>
             <div class="column card padding-2 bg-warning shadow-warning">
                 <h3 class="title-card txt-left">&emsp;Quando usar</h3>
-                <p class="subtitle-card txt-left">&emsp;Sempre que precisar <strong>escrever</strong> algo na página.</p>
+                <p class="subtitle-card txt-left">&emsp;Sempre que precisar <strong>direcionar o usuário à outra página</strong>.</p>
             </div>
             <div class="column card padding-2 bg-alert shadow-alert">
                 <h3 class="title-card txt-left">&emsp;Erros comuns</h3>
-                <p class="subtitle-card txt-left">&emsp;Nos primeiros contatos é comum confundir <code>html</code> e <code>css</code>, então, fique atento.</p>
+                <p class="subtitle-card txt-left">&emsp;O atributo <code>href</code> é obrigatório, então, tenha atenção.</p>
             </div>
         </div>
 
@@ -61,120 +61,111 @@
 
         <div class="content gap-50 margin-50-30 padding-3" id="html">
             <div>
-                <h2 class="title">Inserindo títulos e parágrafo.</h2>
-            </div>
-            <div class="container center">
-                <div>
-                    <code>&lt;h1&gt;Título 1&lt;/h1&gt;</code>
-                </div>
-                <h1>Título 1</h1>
-                <div>
-                    <code>&lt;h2&gt;Título 2&lt;/h2&gt;</code>
-                </div>
-                <h2>Título 2</h2>
-                <div>
-                    <code>&lt;h3&gt;Título 3&lt;/h3&gt;</code>
-                </div>
-                <h3>Título 3</h3>
-                <div>
-                    <code>&lt;h4&gt;Título 4&lt;/h4&gt;</code>
-                </div>
-                <h4>Título 4</h4>
-                <div>
-                    <code>&lt;h5&gt;Título 5&lt;/h5&gt;</code>
-                </div>
-                <h5>Título 5</h5>
-                <div>
-                    <code>&lt;h6&gt;Título 6&lt;/h6&gt;</code>
-                </div>
-                <h6>Título 6</h6>
-                <div>
-                    <code>&lt;p&gt;Parágrafo&lt;/p&gt;</code>
-                </div>
-                <p>Parágrafo</p>
-            </div>
-        </div>
-
-        <div class="content gap-50 margin-50-30 padding-3" id="css">
-            <div>
-                <h2 class="title">Estilizando a cor do texto.</h2>
-            </div>
-            <div class="container center">
-                <div>
-                    <code>color: red;</code>
-                </div>
-                <p class="none" style="color: red">Texto</p>
-                <div>
-                    <code>color: blue;</code>
-                </div>
-                <p class="none" style="color: blue">Texto</p>
-                <div>
-                    <code>color: #c8c800;</code>
-                </div>
-                <p class="none" style="color: #c8c800;">Texto</p>
-                <a href="https://color.adobe.com/pt/create/color-wheel">Adobe Color</a>
-            </div>
-        </div>
-
-        <div class="content gap-50 margin-50-30 padding-3" id="css">
-            <div>
-                <h2 class="title">Estilizando o tamanho do texto.</h2>
+                <h2 class="title">Inserindo link.</h2>
             </div>
             <div class="container center" style="position: relative; top: 10%;">
                 <div>
-                    <code>font-size: 10px;</code>
+                    <code class="code">&lt;a href="pagina.html"&gt;Página&lt;/a&gt;</code>
                 </div>
-                <p class="none" style="font-size: 10px;">Texto</p>
+                <a class="none" href="#">Página</a>
                 <div>
-                    <code>font-size: 20px;</code>
+                    <code class="code">&lt;a href="http://google.com"&gt;Google&lt;/a&gt;</code>
                 </div>
-                <p class="none" style="font-size: 20px;">Texto</p>
-                <div>
-                    <code>font-size: 40px;</code>
-                </div>
-                <p class="none" style="font-size: 40px;">Texto</p>
+                <a class="none" href="http://google.com">Google</a>
             </div>
         </div>
 
         <div class="content gap-50 margin-50-30 padding-3" id="css">
             <div>
-                <h2 class="title">Estilizando o alinhamento do texto.</h2>
+                <h2 class="title">Estilizando a decoração do link.</h2>
             </div>
             <div class="container center" style="position: relative; top: 10%;">
                 <div>
-                    <code>text-align: left;</code>
+                    <code>text-decoration: underline;</code>
                 </div>
-                <p class="none" style="text-align: left;">Texto</p>
+                <a href="#" class="none" style="text-decoration: underline;">Link</a>
                 <div>
-                    <code>text-align: center;</code>
+                    <code>text-decoration: overline;</code>
                 </div>
-                <p class="none" style="text-align: center;">Texto</p>
+                <a href="#" class="none" style="text-decoration: overline;">Link</a>
                 <div>
-                    <code>text-align: rigth;</code>
+                    <code>text-decoration: none;</code>
                 </div>
-                <p class="none" style="text-align: right;">Texto</p>
+                <a href="#" class="none" style="text-decoration: none;">Link</a>
             </div>
         </div>
 
-        <div class="content gap-50 margin-50-30 padding-3" id="css">
+        <div class="content gap-50 margin-50-30 padding-3">
             <div>
-                <h2 class="title">Estilizando a intensidade do texto.</h2>
+                <h2 class="title">Estilizando a cor da decoração do link.</h2>
             </div>
             <div class="container center" style="position: relative; top: 10%;">
                 <div>
-                    <code>font-weight: lighter;</code>
+                    <code>text-decoration-color: red;</code>
                 </div>
-                <p class="none" style="font-family: 'Manrope', sans-serif; font-weight: lighter;">Texto</p>
+                <a href="#" class="none" style="text-decoration-color: red;">Link</a>
                 <div>
-                    <code>font-weight: normal;</code>
+                    <code>text-decoration-color: blue;</code>
                 </div>
-                <p class="none" style="font-family: 'Manrope', sans-serif; font-weight: normal;">Texto</p>
+                <a href="#" class="none" style="text-decoration-color: blue;">Link</a>
                 <div>
-                    <code>font-weight: bolder;</code>
+                    <code>text-decoration-color: orange;</code>
                 </div>
-                <p class="none" style="font-family: 'Manrope', sans-serif; font-weight: bolder;">Texto</p>
+                <a href="#" class="none" style="text-decoration-color: orange;">Link</a>
             </div>
         </div>
+<!-- 
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Estilizando a cor de fundo.</h2>
+            </div>
+            <div class="container center" style="position: relative; top: 10%;">
+                <div>
+                    <code>background-color: violet;</code>
+                </div>
+                <div>
+                    <a href="#" class="none" style="background-color: violet;">Link</a>
+                </div>
+                <div>
+                    <code>background-color: yellow;</code>
+                </div>
+                <div>
+                    <a href="#" class="none" style="background-color: yellow;">Link</a>
+                </div>
+                <div>
+                    <code>background-color: orange;</code>
+                </div>
+                <div>
+                    <a href="#" class="none" style="background-color: orange;">Link</a>
+                </div>
+            </div>
+        </div>  
+
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Estilizando o espaçamento de fundo.</h2>
+            </div>
+            <div class="container center" style="position: relative; top: 10%;">
+                <div>
+                    <code>background-color: yellow;<br>padding: 5px;</code>
+                </div>
+                <div>
+                    <a href="#" class="none" style="background-color: yellow; padding: 5px;">Link</a>
+                </div>
+                <div>
+                    <code>background-color: yellow;<br>padding: 10px;</code>
+                </div>
+                <div>
+                    <a href="#" class="none" style="background-color: yellow; padding: 10px;">Link</a>
+                </div>
+                <div>
+                    <code>background-color: yellow;<br>padding: 15px;</code>
+                </div>
+                <div>
+                    <a href="#" class="none" style="background-color: yellow; padding: 15px;">Link</a>
+                </div>
+            </div>
+        </div>   -->
     </main>
 
     <footer>
