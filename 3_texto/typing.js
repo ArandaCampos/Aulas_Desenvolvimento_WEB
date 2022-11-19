@@ -15,7 +15,7 @@ const reset = () => {
     document.querySelector('.text-typing').innerHTML = "";
 }
 
-for (var i = 0; i < 10; i++){
+for (var i = 0; i < 50; i++){
     setTimeout(reset, 4050 * i)
     setTimeout(typing, 4050 * i + 200)
 }

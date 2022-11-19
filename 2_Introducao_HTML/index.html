@@ -6,104 +6,111 @@
     <meta name="description" content="Material didático sobre inputs e selects. Inclui atividade de fixação e um desafio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Introdução à HTML</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Introdução</title>
 </head>
 <body class="column">
-    <header class="container">
-        <h1 class="supertitle">HTML5</h1>
-        <h2 class="supersubtitle">Capítulo 3</h2>
-        <hr class="lineprincipal"size="0" style="position: relative; top: -40px;">
+    <aside class="row">
+        <p><strong>Introdução</strong></p>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#html">Inserindo</a>
+            <a href="#css">Estilizando</a>
+            <a href="#atividade">Bora praticar?</a>
+        </nav>
+    </aside>
+    <header class="container gap-50 margin-50-30 padding-3">
+        <div>
+            <h1 class="super-title">HTML5 e CSS3</h1>
+            <h2 class="super-subtitle">&emsp;Tecnologias da WEB.</h2>
+        </div>
+        <div>
+            <section class="illustration">
+                <span class="linear-center" style="vertical-align: middle; height: 100%">
+                    <p class="text-typing"></p>
+                    <p class="animation-type" id="bar" >|</p>
+                </span>
+            </section>
+        </div>
     </header>
-
-    <div class="position-card">
-        <div class="hover-card">
-            <div class="card">
-                <div class="side-up">
-                    <h2 class="title">&emsp;Para que server?</h2>
-                    <div class="line">
-                        <div class="full-line"></div>
-                    </div>
-                </div>
-                <div class="side-down">
-                    <div class="data-section">
-                        <p class="subtitle">&emsp;Para inserir <strong>conteúdo e estruturar</strong> a página WEB.</p>
-                    </div>
-                </div>
+    <main>
+        <div class="row center gap-50 padding-3 margin-50-30" id="inicio">
+            <div class="column card padding-2 bg-principal shadow-principal">
+                <h3 class="title-card txt-left">&emsp;O que vamos aprender</h3>
+                <p class="subtitle-card txt-left">&emsp;História e uso do <strong>HTML5</strong>.</p>
+            </div>
+            <div class="column card padding-2 bg-warning shadow-warning">
+                <h3 class="title-card txt-left">&emsp;Quando usar</h3>
+                <p class="subtitle-card txt-left">&emsp;HTML5 e CSS3 são as linguagens de programação WEB mais popular do mundo.</p>
+            </div>
+            <div class="column card padding-2 bg-alert shadow-alert">
+                <h3 class="title-card txt-left">&emsp;Erros comuns</h3>
+                <p class="subtitle-card txt-left">&emsp;Fique atento <strong>nos diferentes usos</strong> de cada linguagem.</p>
             </div>
         </div>
-        <div class="hover-card">
-            <div class="card">
-                <div class="side-up">
-                    <h2 class="title">&emsp;Semântica</h2>
-                    <div class="line">
-                        <div class="full-line"></div>
-                    </div>
-                </div>
-                <div class="side-down">
-                    <div class="data-section">
-                        <p class="subtitle">&emsp;Semântica é o estudo do significado!</p>
-                    </div>
-                </div>
+
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Criador do HTML5.</h2>
+            </div>
+            <figure class="center column">
+                <img src="imagens/tim-berners-lee.jpg" style="top: 20px;">
+                <figcaption>Tim Berners-Lee criou o HTML em 1990</figcaption>
+            </figure>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">O que é uma linguagem de marcação?</h2>
+            </div>
+            <div>
+                <figure class="center column" style="margin-top: 10px;">
+                    <img src="imagens/linguagem_de_marcacao.png" style="top: 110px;">
+                    <figcaption>Linguagem de marcação</figcaption>
+                </figure>
+                <!-- <p style="top: 10px;">&emsp;Armazena conteúdo de mídia (texto, imagem, vídeos, links) e seu sentido (semântica).</p> -->
             </div>
         </div>
-        <div class="hover-card">
-            <div class="card">
-                <div class="side-up">
-                    <h2 class="title">&emsp;O que significa tag?</h2>
-                    <div class="line">
-                        <div class="full-line"></div>
-                    </div>
-                </div>
-                <div class="side-down">
-                    <div class="data-section">
-                        <p class="subtitle">&emsp;Tag significa <strong>marcação</strong> em português. Ela é identifica no HTML pelos sinais de menor e maior.<br> <code>&lt; &gt;</code></p>
-                    </div>
-                </div>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Como escrevo no .hmlt?</h2>
+            </div>
+            <div>
+                <figure class="center column" style="margin-top: 0px;">
+                    <img src="imagens/tags.png" style="top: 110px;">
+                    <figcaption>Sintaxe do HMTL5</figcaption>
+                </figure>
+                <!-- <p style="top: 10px;">&emsp;Tag significa marcação em português e, é com ela, que escrevemos o HTML.</p> -->
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <h2 class="supersubtitle" style="top: 0px;">&emsp;Tim Berners-Lee - de novo!</h2>
-        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <figure class="center" style="gap: 10px; position: relative; top: 60px;">
-            <img class="caption-img" src="imagens/tim-berners-lee.jpg" width="460px" >
-            <figcaption style="text-align: center; top: -70%; left: 10vw;"><strong>Tim Berners-Lee</strong></figcaption>
-        </figure>
-        <p style="top: 80px;">&emsp;Criado em <strong>1990</strong>, o HTML é uma <strong>linguagem de marcação</strong>, que deve ser lido e interpretado pelos navegadores. Hoje, o HTML está na sua versão 5, também conhecida como <strong>HTML Semântico</strong>.</p>
-    </div>
-
-    <div class="container" style="position: relative; top: 50px;">
-        <h2 class="supersubtitle" style="top: 0px;">&emsp;O que faz uma linguagem de marcação?</h2>
-        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <p style="top: 10px;">&emsp;Armazena conteúdo de mídia (texto, imagem, vídeos, links) e seu sentido (semântica).</p>
-        <img src="imagens/linguagem_de_marcacao.png" style="top: 10px;width: 65vw; left: 5vw;">
-    </div>
-
-    <div class="container" style="position: relative; top: 50px;">
-        <h2 class="supersubtitle" style="top: 0px;">&emsp;Como escrevo no <code>.html</code>?</h2>
-        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <img src="imagens/tags.png" style="top: 10px;width: 65vw; left: 5vw;">
-            <p style="top: 10px;">&emsp;Tag significa marcação em português e, é com ela, que escrevemos o HTML.</p>
-    </div>
-
-    <div class="container" style="position:relative; top: 40px;">
-        <h2 class="supersubtitle" style="top: 30px;">&emsp;Como meu <code>.html</code> é lido e aparece na tela?</h2>
-        <hr class="lineprincipal"size="0" style="position: relative; top: 20px;">
-        <figure class="center" style="gap: 10px; position: relative; top: 60px;">
-            <img class="caption-img" src="imagens/arquitetura_navegores.png" width="460px" >
-            <figcaption style="text-align: center; top: -60%; left: 10vw;"><strong>Arquitetura dos Navegores</strong></figcaption>
-        </figure>
-    </div>
-
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Como meu .html é lido e aparece na tela?</h2>
+            </div>
+            <figure class="center column" style="margin-top: 50px;">
+                <img src="imagens/arquitetura_navegores.png" style="top: 20px;">
+                <figcaption>Arquitetura dos navegadores</figcaption>
+            </figure>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3" id="html">
+            <div>
+                <h2 class="title">Inserindo títulos e parágrafo.</h2>
+            </div>
+            <div class="container center">
+                <div>
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                </div>
+                <h1>Título 1</h1>
+            </div>
+        </div>
+<!-- 
     <div class="container" style="position: relative; top: 50px;">
         <div>
             <h2 class="supersubtitle" style="top: 0px; left: 0px;">Tags padrões</h2>
             <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
             <div class="demo">
                 <div class="code" style="height: 25px;">
-                    <code>&lt;!DOCTYPE html&gt;</code>
+                    
                 </div>
                 <p>Esta tag diz ao navegador que este arquivo é html</p>
             </div>
@@ -223,20 +230,25 @@
 
     </div>
     <br>
-    <div class="container">
-        <h2 class="supersubtitle" style="top: 0px;">Bora praticar?</h2>
-        <hr class="lineprincipal"size="0" style="position: relative; top: -5px;">
-        <ol type="I">
-            <li>
-                <a href="projeto.html" target="_blank" rel="noreferrer">Projeto</a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noreferrer">Atividade de fixação</a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noreferrer">Exit Ticket</a>
-            </li>
-        </ol>
-    </div>
+-->    
+    <footer>
+        <div class="content gap-50 margin-30 padding-3" id="atividade">
+            <div>
+                <h2 class="title">Bora praticar?</h2>
+            </div>
+            <ol class="column center" type="I">
+                <li>
+                    <a class="paragraph" href="https://replit.com/~" target="_blank" rel="noreferrer">Replit</a>
+                </li>
+                <li>
+                    <a class="paragraph" href="#" target="_blank" rel="noreferrer">Atividade de fixação</a>
+                </li>
+                <li>
+                    <a class="paragraph" href="#" target="_blank" rel="noreferrer">Exit Ticket</a>
+                </li>
+            </ol>
+        </div>
+    </footer>
+
 </body>
 </html>
