@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Renan Aranda Campos">
+    <meta name="description" content="Material didático sobre inputs e selects. Inclui atividade de fixação e um desafio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Capítulo 8 - Somas</title>
+</head>
+
+<body class="column">
+    <aside class="row">
+        <p><strong>Capítulo 1</strong></p>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#html">Inserindo</a>
+            <a href="#css">Estilizando</a>
+            <a href="#atividade">Bora praticar?</a>
+        </nav>
+    </aside>
+    <header class="container gap-50 margin-50-30 padding-3">
+        <div>
+            <h1 class="super-title">Entrada, seleção, botão e formulário.</h1>
+            <h2 class="super-subtitle">&emsp;Interagindo com o usuário.</h2>
+        </div>
+        <div>
+            <section class="illustration">
+                <span class="linear-center" style="vertical-align: middle; height: 100%">
+                    <p class="text-typing"></p>
+                    <p class="animation-type" id="bar" >|</p>
+                </span>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="row center gap-50 padding-3 margin-50-30" id="inicio">
+            <div class="column card padding-2 bg-principal shadow-principal">
+                <h3 class="title-card txt-left">&emsp;O que vamos aprender</h3>
+                <p class="subtitle-card txt-left">&emsp;Vamos aprender a interagir com o usuário inserindo e estilizando formulários na WEB.</p>
+            </div>
+            <div class="column card padding-2 bg-warning shadow-warning">
+                <h3 class="title-card txt-left">&emsp;Quando usar</h3>
+                <p class="subtitle-card txt-left">&emsp;Sempre que for preciso que o <strong>usuário informe alguma coisa</strong>.</p>
+            </div>
+            <div class="column card padding-2 bg-alert shadow-alert">
+                <h3 class="title-card txt-left">&emsp;Erros comuns</h3>
+                <p class="subtitle-card txt-left">&emsp;O atributo <code>type</code> deve ser preenchido.</p>
+            </div>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Identificando os elementos.</h2>
+            </div>
+            <figure class="center column" style="margin-top: 50px;">
+                <img src="imagens/elements.png" style="top: 20px;">
+                <figcaption>Site da Netflix</figcaption>
+            </figure>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Anatomia de uma entrada de usuário.</h2>
+            </div>
+            <figure class="center column" style="margin-top: 50px;">
+                <img src="imagens/anatomia.png" style="top: 20px;">
+                <figcaption>Anatomia do input</figcaption>
+            </figure>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Sintaxe da tag input.</h2>
+            </div>
+            <figure class="center column" style="margin-top: 50px;">
+                <img src="imagens/sintaxe_input.png" style="top: 20px;">
+                <figcaption>Sintaxe da tag</figcaption>
+            </figure>
+        </div>
+        <form action="" method="post">
+            <div class="content gap-50 margin-50-30 padding-3" id="html">
+                <div>
+                    <h2 class="title">Inserindo label.</h2>
+                </div>
+                <div class="container center" style="margin-top: 20%;">
+                    <div>
+                        <code>&lt;label&gt;Nome: &lt;/label&gt;</code>
+                    </div>
+                    <label>Nome: </label>
+                </div>
+            </div>    
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de textos.</h2>
+                </div>
+                <div class="container center" style="margin-top: 8%; grid-template-columns: 60% 38%;">
+                    <div>
+                        <code>&lt;input type="text" placeholder="Nome"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="text" id="text" placeholder="Nome">
+                    </div>
+                    <div>
+                        <code>&lt;input type="password" placeholder="Senha"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="password" id="password" placeholder="Senha">
+                    </div>
+                    <div>
+                        <code>&lt;input type="email" placeholder="E-mail"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <code>&lt;input type="search" placeholder="Pesquisar"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="search" id="search" placeholder="Pesquisar">
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de número.</h2>
+                </div>
+                <div class="container center" style="margin-top: 8%; grid-template-columns: 60% 38%;">
+                    <div>
+                        <code>&lt;input type="range" min="0" max="100" step="10"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="range" min="0" max="100" step="10">
+                    </div>
+                    <div>
+                        <code>&lt;input type="number" placeholder="Idade"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="number" id="number" placeholder="Idade">
+                    </div>
+                    <div>
+                        <code>&lt;input type="tel" placeholder="Fone"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="tel" id="tel" placeholder="Fone">
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de data.</h2>
+                </div>
+                <div class="container center" style="margin-top: 8%; grid-template-columns: 60% 38%;">
+                    <div>
+                        <code>&lt;input type="datetime-local"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="datetime-local" id="datetime-local">
+                    </div>
+                    <div>
+                        <code>&lt;input type="date"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="date" id="date">
+                    </div>
+                    <div>
+                        <code>&lt;input type="month"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="month" id="month">
+                    </div>
+                    <div>
+                        <code>&lt;input type="time"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="time" id="time">
+                    </div>
+                    <div>
+                        <code>&lt;input type="week"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="week" id="week">
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de cor.</h2>
+                </div>
+                <div class="container center" style="margin-top: 20%; grid-template-columns: 60% 38%;">
+                    <div>
+                        <code>&lt;input type="color"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="color" id="color">
+                    </div>
+                </div>
+            </div>    
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de arquivo.</h2>
+                </div>
+                <div class="container center" style="margin-top: 25%; grid-template-columns: 60% 38%;">
+                    <div>
+                        <code>&lt;input type="file" accept=".jpg,.jpeg,.gif"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="file" id="file" accept=".jpg,.jpeg,.gif">
+                    </div>
+                </div>
+            </div>    
+            <div class="content gap-50 margin-50-30 padding-3" style=" grid-template-columns: 30% 68%;">
+                <div>
+                    <h2 class="title">Inserindo input de boolenao.</h2>
+                </div>
+                <div class="container center" style="margin-top: 10%; grid-template-columns: 60% 38%;">
+
+                    <div>
+                        <code>
+                            &lt;input type="checkbox" name="musica" value="funk"&gt; Funk<br>
+                            &lt;input type="checkbox" name="musica" value="pagode"&gt; Pagode<br>
+                        </code>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" name="musica" value="funk"> <label>Funk</label>
+                        <input type="checkbox" id="checkbox" name="musica" value="pagode"> <label>Pagode</label>
+                    </div>
+                    <div>
+                        <code>
+                            &lt;input type="radio" name="sexo" value="feminino"&gt; Feminino<br>
+                            &lt;input type="radio" name="sexo" value="masculino"&gt; Masculino<br>
+                        </code>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio" name="sexo" value="feminino"> <label>Feminino</label>
+                        <input type="radio" id="radio" name="sexo" value="masculino"> <label>Masculino</label>
+                    </div>
+                </div>
+            </div>    
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de botão.</h2>
+                </div>
+                <div class="container center" style="margin-top: 10%; grid-template-columns: 60% 38%;">
+                    
+                    <div>
+                        <code>&lt;input type="reset"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="reset" id="reset">
+                    </div>
+
+                    <div>
+                        <code>&lt;input type="button"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="button" id="button">
+                    </div>
+
+                    <div>
+                        <code>&lt;input type="submit"&gt;</code>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit">
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo input de opção.</h2>
+                </div>
+                <div class="container center" style="margin-top: 20%; grid-template-columns: 60% 38%;">
+
+                    <div>
+                        <code>
+                            &lt;input type="text" placeholder="--- Mc ---" list="mcs"&gt;<br>
+                            &lt;datalist id="mcs"&gt;<br>
+                            &emsp;&emsp;&lt;option value="Mc Hariel"&gt;<br>
+                            &emsp;&emsp;&lt;option value="Mc Paiva"&gt;<br>
+                            &emsp;&emsp;&lt;option value="Mc Ryan SP"&gt;<br>
+                            &lt;/datalist&gt;
+                        </code>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="--- Mc ---" list="mcs">
+                        <datalist id="mcs">
+                            <option value="Mc Hariel">
+                            <option value="Mc Paiva">
+                            <option value="Mc Ryan SP">
+                        </datalist>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="content gap-50 margin-50-30 padding-3">
+                <div>
+                    <h2 class="title">Inserindo seletor.</h2>
+                </div>
+                <div class="container center" style="margin-top: 10%; grid-template-columns: 60% 38%;">
+                    <div>
+                        <code>
+                            &lt;select name="musicas"&gt;<br>
+                            &emsp;&emsp;&lt;option value="giro"&gt;Giro loco&lt;/option&gt;<br>
+                            &emsp;&emsp;&lt;option value="outfit"&gt;Outfit valioso&lt;/option&gt;<br>
+                            &emsp;&emsp;&lt;option value="o fim"&gt;O fim é triste&lt;/option&gt;<br>
+                        &lt;/select&gt;
+                        </code>
+                    </div>
+                    <div>
+                        <select name="musicas">
+                            <option value="giro" select>Giro loco</option>
+                            <option value="outfit">Outfit valioso</option>
+                            <option value="o fim">O fim é triste</option>
+                        </select>
+                    </div>                
+                </div>
+            </div>    
+        </form>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Aprofundando o assunto.</h2>
+            </div>
+            <p class="subtitle-card" style="margin-top: 10%;">&emsp;Você reparou que devemos informar o <i>type</i> ao computador? Isso soa estranho e desnessário, mas é por causa de uma habilidade que temos e o computador não: reconhecer o sentido das informações pelo contexto.<br>&emsp;Para que cada informação faça sentido, precisamos ler e interpretar conforme o seu tipo. E, nós, seres humanos, fazemos isso o tempo todo sem dificuldades. Por exemplo, se eu te disser <strong>"O Brasil foi campeão em 94"</strong>, você é plenamente capaz de <i>ler</i> e entender que "O Brasil foi campeão em" trata-se de um texto e "94" se refere ao ano de 1994. O mesmo não acontece com um computador, por isso devemos informar o tipo para que ele consiga ler corretamente.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="content gap-50 margin-30 padding-3" id="atividade">
+            <div>
+                <h2 class="title">Bora praticar?</h2>
+            </div>
+            <ol class="column center" type="I">
+                <li>
+                    <a class="paragraph" href="https://replit.com/~" target="_blank" rel="noreferrer">Replit</a>
+                </li>
+                <li>
+                    <a class="paragraph" href="#" target="_blank" rel="noreferrer">Atividade de fixação</a>
+                </li>
+                <li>
+                    <a class="paragraph" href="#" target="_blank" rel="noreferrer">Exit Ticket</a>
+                </li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>
