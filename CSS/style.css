@@ -13,13 +13,6 @@
 .pastel-rainbow-4-rgba { color: rgba(255, 193, 89, 1); }
 .pastel-rainbow-5-rgba { color: rgba(255, 105, 98, 1); }
 
-/* Color Theme Swatches in HSLA */
-.pastel-rainbow-1-hsla { color: hsla(193, 100, 80, 1); }
-.pastel-rainbow-2-hsla { color: hsla(112, 65, 77, 1); }
-.pastel-rainbow-3-hsla { color: hsla(53, 90, 80, 1); }
-.pastel-rainbow-4-hsla { color: hsla(37, 100, 67, 1); }
-.pastel-rainbow-5-hsla { color: hsla(2, 100, 69, 1); }
-
 :root{
     --principal: #9BE8FF;
     --principal-shadow: #6daec4;
