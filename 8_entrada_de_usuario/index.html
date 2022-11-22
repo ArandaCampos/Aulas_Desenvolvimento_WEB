@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="input-search.css">
+    <link rel="stylesheet" href="pressed.css">
+    <!-- <link rel="stylesheet" href="illustration.css"> -->
     <title>Capítulo 8 - Somas</title>
 </head>
 
-<body class="column">
+<body class="column" onload="loading()" >
     <aside class="row">
         <p><strong>Capítulo 8</strong></p>
         <nav>
@@ -29,14 +30,18 @@
         <div>
             <section class="illustration">
                 <span class="linear-center" style="vertical-align: middle; height: 100%">
-                    <p class="text-typing" style="font-size: 3rem;"></p>
-                    <p class="animation-type" id="bar" >|</p>
-                    <!-- <div class="search">
-                        <input class="input-search" type="text" value="" placeholder="Search ...">
-                        <a href="#">
-                            <img class="icon-search" src="imagens/icon.png" alt="">
-                        </a>    
-                    </div> -->
+                    <div id="loading">
+                        <div id="loader">
+                            <div id="progress"></div>
+                        </div>
+                        <p class="animation-type" style="text-align: center;">Carregando ...</p>
+                    </div>
+                    <div id="forms">
+                        <h1>Entrar</h1>
+                        <input id="username" type="text" placeholder="username">
+                        <input id="password" type="password" placeholder="password">
+                        <input id="submit" type="submit">
+                    </div>
                 </span>
             </section>
         </div>
@@ -108,7 +113,7 @@
             </div>    
             <div class="content gap-50 margin-50-30 padding-3">
                 <div>
-                    <h2 class="title">Inserindo input de textos.</h2>
+                    <h2 class="title">Inserindo input de texto.</h2>
                 </div>
                 <div class="container center" style="margin-top: 8%; grid-template-columns: 60% 38%;">
                     <div>
@@ -230,7 +235,7 @@
             </div>    
             <div class="content gap-50 margin-50-30 padding-3" style=" grid-template-columns: 30% 68%;">
                 <div>
-                    <h2 class="title">Inserindo input de boolenao.</h2>
+                    <h2 class="title">Inserindo input booleano.</h2>
                 </div>
                 <div class="container center" style="margin-top: 10%; grid-template-columns: 60% 38%;">
 
@@ -273,14 +278,14 @@
                         <code>&lt;input type="button"&gt;</code>
                     </div>
                     <div>
-                        <input type="button" id="button">
+                        <input type="button">
                     </div>
 
                     <div>
                         <code>&lt;input type="submit"&gt;</code>
                     </div>
                     <div>
-                        <input type="submit" id="submit">
+                        <input type="submit">
                     </div>
                 </div>
             </div>    
@@ -362,6 +367,7 @@
             </ol>
         </div>
     </footer>
-    <script src="typing.js"></script>
+    <!-- <script src="typing.js"></script> -->
+    <script src="loading.js"></script>
 </body>
 </html>

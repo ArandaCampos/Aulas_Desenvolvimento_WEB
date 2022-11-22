@@ -1,0 +1,113 @@
+#loading{
+    width: 60%; 
+    display: block;
+}
+
+#loader{
+    height: 12px; 
+    width: 100%; 
+    background: #F6F4D2; 
+    padding: 5px; 
+    border-radius: 20px
+}
+
+#progress{
+    height: 100%; 
+    width: 10%; 
+    background: #9BE8FF;
+    background: #FF6963; 
+    border-radius: 10px;
+}
+
+#forms{
+    display: none; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+
+    animation-name: transforms;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-play-state: paused;
+}
+
+#forms > #username, #forms > #password{
+    width: calc(100% - 30px);
+    height: 10px;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+#forms > input, #forms > h1, #loading > p{
+    font-family: 'Manrope', sans-serif;
+    color: #282828;
+}
+
+#submit{
+    font-size: 0.8rem;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+#loading > p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FF6963;
+    animation-duration: 0.8s;
+}
+
+#forms > h1{
+    font-size: 2rem;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FF6963;
+}
+
+#submit{
+    background: #FF6963;
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    
+    
+    animation-name: pressed;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+}
+
+@keyframes pressed {
+    0%, 100%{
+        background: #FF6963;
+    }
+    50%{
+        background: #8d2b28;
+        color: #F6F4D2;
+    }
+}
+
+@keyframes transforms {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        position: relative;
+        left: 100px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
