@@ -1,7 +1,7 @@
 const txt_user = "Aluno 1"
 const txt_pass = "123456"
-var cont_u = 0
-var cont_p = 0
+var cont_u = cont_p = 0
+
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const loading = async () => {
@@ -11,8 +11,7 @@ const loading = async () => {
         document.getElementById("progress").style.width = i + "%"
         document.getElementById("number").innerHTML = i + "%";
         await delay(100);
-    }
-  
+    }  
 }
 
 const showForm = async () => {
