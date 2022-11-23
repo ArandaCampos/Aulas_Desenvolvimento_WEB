@@ -152,7 +152,7 @@ nav > a{
     padding-left: 50px;
 }
 
-nav > a:hover, li > a:hover{
+nav > a:hover, li > a:hover, aside > a:hover{
     color: black;
     font-weight: 500;
 }
