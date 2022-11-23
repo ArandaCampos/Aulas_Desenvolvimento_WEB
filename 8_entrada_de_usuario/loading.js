@@ -1,4 +1,4 @@
-const txt_user = "Aluno 1"
+const txt_user = "Código Livre"
 const txt_pass = "123456"
 var cont_u = cont_p = 0
 
@@ -11,16 +11,16 @@ const loading = async () => {
         document.getElementById("progress").style.width = i + "%"
         document.getElementById("number").innerHTML = i + "%";
         await delay(100);
-    }  
+    }
 }
 
 const showForm = async () => {
   document.getElementById("loading").style.display = "none";
   document.getElementById("forms").style.display = "flex";
-  document.getElementById('forms').style.animationPlayState = "running" 
+  document.getElementById('forms').style.animationPlayState = "running"
   setTimeout(typing_user, 1100);
-  setTimeout(typing_password, 2800)
-  setTimeout(pressed_btn, 4100)
+  setTimeout(typing_password, 2100 + txt_user.length * 150)
+  setTimeout(pressed_btn, 2200 + txt_user.length * 150 + txt_pass.length * 150)
 }
 
 const typing_user = () => {
@@ -40,5 +40,6 @@ const typing_password = () => {
 }
 
 const pressed_btn = () => {
+    console.log("Entrou")
     document.getElementById('submit').style.animationPlayState = "running"
 }
