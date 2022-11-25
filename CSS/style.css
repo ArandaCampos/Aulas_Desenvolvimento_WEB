@@ -1,17 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap');
-/* Color Theme Swatches in Hex */
-.pastel-rainbow-1-hex { color: #9BE8FF; }
-.pastel-rainbow-2-hex { color: #A8EB9F; }
-.pastel-rainbow-3-hex { color: #FAF09F; }
-.pastel-rainbow-4-hex { color: #FFC259; }
-.pastel-rainbow-5-hex { color: #FF6963; }
-
-/* Color Theme Swatches in RGBA */
-.pastel-rainbow-1-rgba { color: rgba(154, 232, 255, 1); }
-.pastel-rainbow-2-rgba { color: rgba(168, 235, 158, 1); }
-.pastel-rainbow-3-rgba { color: rgba(249, 239, 158, 1); }
-.pastel-rainbow-4-rgba { color: rgba(255, 193, 89, 1); }
-.pastel-rainbow-5-rgba { color: rgba(255, 105, 98, 1); }
 
 :root{
     --principal: #9BE8FF;
@@ -305,10 +292,7 @@ div:target{
 }
 
 .content{
-    animation-name: toright;
-    animation-duration: 0.6s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    animation: toright 0.6s ease-out forwards;
     animation-play-state: paused;
 }
 
