@@ -1,6 +1,4 @@
-const height = window.screen.height;
-const line_visibility = height * 0.35;
-console.log(line_visibility)
+const line_visibility = window.screen.height * 0.35;
 const elements = document.querySelectorAll('.content');
 
 const moved_page = () => {
@@ -22,6 +20,7 @@ const moved_page = () => {
     })
 
     const active_visible = visibles.find((element) => element.visible)
+    
     active_visible.element.style.animationPlayState = "running"
 }
 
