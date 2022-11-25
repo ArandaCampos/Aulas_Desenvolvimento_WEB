@@ -304,6 +304,14 @@ div:target{
     animation: illuminate 1s linear;
 }
 
+.content{
+    animation-name: toright;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
 .shadow-principal:hover{
     animation: shadow-principal-frame 0.5s forwards linear;
 }
@@ -357,5 +365,16 @@ div:target{
     100%{
         transform: scale(1.01);
         box-shadow: 10px 10px 30px 5px var(--warning-shadow);
+    }
+}
+
+@keyframes toright{
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
