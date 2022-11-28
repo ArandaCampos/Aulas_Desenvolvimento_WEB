@@ -6,17 +6,78 @@
     <meta name="description" content="Página inicial da Aulas desenvolvimento WEB">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Página Inicial</title>
 </head>
-<body>
-    <a href="1_Introducao_WEB/index.html">1_Introducao_WEB</a>
-    <a href="2_Introducao_HTML/index.html">2_Introducao_HTML</a>
-    <a href="3_texto/index.html">3 textos</a>
-    <a href="4_link/index.html">4 links</a>
-    <a href="5_button/index.html">5 botões</a>
-    <a href="6_img/index.html">6 imagens</a>
-    
-    <a href="8_entrada_de_usuario/index.html">8 - Entrada, seleções, formulários</a>
-    
+<body class="column">
+    <aside class="row">
+        <p id="user">Seja bem-vindo(a), </p>
+        <nav>
+            <a href="#intro">Módulo introdutório</a>
+            <a href="#apple">Projeto apple</a>
+            <a href="#netflix">Projeto netflix</a>
+            <a href="#final">Projeto final</a>
+            <a href="#">Configurações</a>
+        </nav>
+    </aside>
+    <header class="container gap-50 margin-50-30 padding-3">
+        <div>
+            <h1 class="super-title">Desenvolvimento WEB.</h1>
+            <h2 class="super-subtitle">&emsp;Desenvolvendo o futuro.</h2>
+        </div>
+        <div>
+            <section class="illustration">
+                <span class="linear-center" style="vertical-align: middle; height: 100%">
+                    <div id="loading">
+                        <div id="loader">
+                            <div id="progress"></div>
+                        </div>
+                        <p class="animation-type" style="text-align: center;">Carregando ...</p>
+                    </div>
+                </span>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="content gap-50 margin-50-30 padding-3" id="intro">
+            <div>
+                <h2 class="title">Módulo introdutório.</h2>
+            </div>
+            <ol type="I" class="column center" style="margin-top: 0%;">
+                <li><a href="1_Introducao_WEB/index.html">WEB</a></li>
+                <li><a href="2_Introducao_HTML/index.html">HTML e CSS</a></li>
+            </ol>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3" id="apple">
+            <div>
+                <h2 class="title">Projeto Apple.</h2>
+            </div>
+            <ol type="I" class="column center" style="margin-top: 0%;">            
+                <li><a href="3_texto/index.html">Textos</a></li>
+                <li><a href="4_link/index.html">Links</a></li>
+                <li><a href="5_button/index.html">Botões</a></li>
+                <li><a href="6_img/index.html">Imagens</a></li>
+            </ol>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3" id="netflix">
+            <div>
+                <h2 class="title">Projeto Netflix</h2>
+            </div>
+            <ol type="I" class="column center" style="margin-top: 0%;">
+                <li><a href="8_entrada_de_usuario/index.html">Entradas, seleções, formulários</a></li>
+            </ol>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3" id="final" style="margin-bottom: 10%;">
+            <div>
+                <h2 class="title">Projeto final</h2>
+            </div>
+            <ol type="I" class="column center" style="margin-top: 0%;">
+                <li><a href="#">Animações</a></li>
+            </ol>
+        </div>
+    </main>
+
+    <script src="JS/set_config.js"></script>
+    <script src="JS/scroll.js"></script>
 </body>
 </html>

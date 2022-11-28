@@ -1,3 +1,7 @@
+/* Exemplo da estilização*/
+.hover-red:hover{ background: red;}
+
+/* Animação */
 #loading{
     width: 60%;
     display: block;
