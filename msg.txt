@@ -1,5 +1,0 @@
-@Érica Carvalho, sobre o projeto Netflix.
-
-Escolhemos o site da Netflix porque a maior parte dele continha assuntos que a gente já havia abordado. Mas existem outros site como o Apple que se aplicaria muito bem nesse caso.
-
-A partir daí, mostramos o projeto e pedimos que eles identificassem os elementos que eles já conheciam e reproduzissem no replit. E, os que eles não conheciam a gente apresentou durante a aula.
