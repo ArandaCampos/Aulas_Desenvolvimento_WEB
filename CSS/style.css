@@ -270,6 +270,8 @@ nav > a:hover, li > a:hover, aside > a:hover{
 
 /* Animações */
 
+.hover-red:hover{ background: red;}
+
 figure:hover > img{
     filter: brightness(0.05);  
 }
