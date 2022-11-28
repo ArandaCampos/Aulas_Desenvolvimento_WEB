@@ -4,6 +4,7 @@
     --principal: #9BE8FF;
     --principal-shadow: #6daec4;
     --bg: #F6F4D2;
+    --bg-shadow: #dbdab8;
     --bg-trans: rgba(246, 244, 210, 0.90);
     --alert: #FF6963;
     --alert-shadow: #CC5450;
@@ -135,14 +136,21 @@ nav > a, li > a, aside > p{
     text-decoration: none;
 }
 
-nav > a{
-    padding-left: 50px;
+nav > a, aside > a{
+    margin-left: 30px;
+    padding: 5px 10px 5px 10px;
 }
 
 nav > a:hover, li > a:hover, aside > a:hover{
     color: black;
     font-weight: 500;
 }
+
+nav > a:hover, aside > a:hover{
+    background: #fcfbe5;
+    border-radius: 30px;
+    box-shadow: 0px 5px 1px var(--bg-shadow);
+} 
 
 .none{
     font-family: none;
@@ -266,6 +274,7 @@ nav > a:hover, li > a:hover, aside > a:hover{
     background-color: var(--principal);
     border-radius: 50px;
     box-shadow: 10px 10px 30px 5px var(--principal-shadow);
+    box-shadow: 10px 10px 5px var(--principal-shadow);
 }
 
 /* Animações */
@@ -299,15 +308,15 @@ div:target{
 }
 
 .shadow-principal:hover{
-    animation: shadow-principal-frame 0.5s forwards linear;
+    animation: shadow-principal-frame 0.3s forwards ease-out;
 }
 
 .shadow-alert:hover{
-    animation: shadow-alert-frame 0.5s forwards linear;
+    animation: shadow-alert-frame 0.3s forwards ease-out;
 }
 
 .shadow-warning:hover{
-    animation: shadow-warning-frame 0.5s forwards linear;
+    animation: shadow-warning-frame 0.3s forwards ease-out;
 }
 
 .animation-type{
@@ -336,21 +345,21 @@ div:target{
 @keyframes shadow-principal-frame{
     100%{
         transform: scale(1.01);
-        box-shadow: 10px 10px 30px 5px var(--principal-shadow);
+        box-shadow: 10px 10px 4px var(--principal-shadow);
     }
 }
 
 @keyframes shadow-alert-frame{
     100%{
         transform: scale(1.01);
-        box-shadow: 10px 10px 30px 5px var(--alert-shadow);
+        box-shadow: 10px 10px 4px var(--alert-shadow);
     }
 }
 
 @keyframes shadow-warning-frame{
     100%{
         transform: scale(1.01);
-        box-shadow: 10px 10px 30px 5px var(--warning-shadow);
+        box-shadow: 10px 10px 4px var(--warning-shadow);
     }
 }
 
