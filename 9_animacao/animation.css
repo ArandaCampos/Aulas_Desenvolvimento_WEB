@@ -1,0 +1,36 @@
+:root{
+    --radius: 50px;
+}
+
+.circle{
+    position: relative;
+    left: 0%;
+    height: var(--radius);
+    width: var(--radius);
+    border-radius: 50%;
+}
+
+.move-ease-out, .move-ease-in, .move-linear{
+    animation: going-to 3s 0.8s infinite forwards;
+}
+
+.move-ease-in{
+    background: var(--alert);
+    animation-timing-function: ease-in;
+}
+
+.move-ease-out{
+    background: var(--warning);
+    animation-timing-function: ease-out;
+}
+
+.move-linear{
+    background: var(--principal-shadow);
+    animation-timing-function: linear;
+}
+
+@keyframes going-to {
+    100%{
+        left: calc(100% - var(--radius));
+    }
+}

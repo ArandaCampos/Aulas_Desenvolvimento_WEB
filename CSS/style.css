@@ -243,6 +243,10 @@ nav > a:hover, aside > a:hover{
     gap: 50px;
 }
 
+.gap-20{
+    gap: 20px;
+}
+
 .gap-10{
     gap: 10px;
 }
@@ -388,4 +392,54 @@ div:target{
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.anime::after{
+    content: '';
+    animation: teste 3s infinite linear;
+}
+
+@keyframes teste{
+    5%{
+        content: '<';
+    }
+    10%{
+        content: '<p';
+    }
+    15%{
+        content: '<p>';
+    }
+    20%{
+        content: '<p> ';
+    }
+    25%{
+        content: '<p> T';
+    }
+    30%{
+        content: '<p> Te';
+    }
+    35%{
+        content: '<p> Tex';
+    }
+    40%{
+        content: '<p> Text';
+    }
+    45%{
+        content: '<p> Texto';
+    }
+    50%{
+        content: '<p> Texto ';
+    }
+    55%{
+        content: '<p> Texto <';
+    }
+    60%{
+        content: '<p> Texto </';
+    }   
+    65%{
+        content: '<p> Texto </p';
+    }
+    70%{
+        content: '<p> Texto </p>';
+    }    
 }
