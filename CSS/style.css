@@ -150,7 +150,11 @@ nav > a:hover, aside > a:hover{
     background: #fcfbe5;
     border-radius: 30px;
     box-shadow: 0px 5px 1px var(--bg-shadow);
-} 
+}
+
+nav > a:active{
+    box-shadow: inset 0px 5px 1px var(--bg-shadow);
+}
 
 .input-config{
     height: 30px;
@@ -166,38 +170,6 @@ nav > a:hover, aside > a:hover{
 .input-config:focus{
     color: var(--ft-color);
     background-color: var(--bg-shadow);
-}
-
-.btn-submit, .btn-cancel{
-    color: var(--bg);
-    text-decoration: none;
-    font-weight: 500;
-    border: none;
-    height: 30px;
-    width: 200px;
-    border-radius: 30px;
-    margin-left: 30px;
-    padding: 5px 10px 5px 10px;
-}
-
-.btn-cancel{
-    background: var(--alert);
-    box-shadow: 0px 5px 1px var(--alert-shadow);
-}
-
-.btn-submit{
-    background: var(--principal-shadow);
-    box-shadow: 0px 5px 1px #4a8194;
-}
-
-.btn-cancel:active{
-    box-shadow: inset 0px 5px 1px var(--alert-shadow);
-    transform: translate(-2px, 5px);
-}
-
-.btn-submit:active{
-    box-shadow: inset 0px 5px 1px #4a8194;
-    transform: translate(-2px, 5px);
 }
 
 .none{
@@ -355,6 +327,44 @@ nav > a:hover, aside > a:hover{
     border-radius: 50px;
     box-shadow: 10px 10px 30px 5px var(--principal-shadow);
     box-shadow: 10px 10px 5px var(--principal-shadow);
+}
+
+.btn-submit, .btn-cancel{
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    height: 30px;
+    border-radius: 30px;
+    padding: 7px 20px 7px 20px;
+}
+
+.btn-cancel{
+    background: var(--alert);
+}
+
+.btn-submit{
+    background: var(--principal-shadow);
+}
+
+.btn-cancel:hover{    
+    box-shadow: 0px 5px 1px var(--alert-shadow);
+    transform: translate(2px, -5px);
+}
+
+.btn-submit:hover{
+    box-shadow: 0px 5px 1px #4a8194;
+    transform: translate(2px, -5px);
+}
+
+.btn-cancel:active{
+    box-shadow: inset 0px 5px 1px var(--alert-shadow);
+    transform: translateX(-2px);
+}
+
+.btn-submit:active{
+    box-shadow: inset 0px 5px 1px #4a8194;
+    transform: translateX(-2px);
 }
 
 /* Animações */
