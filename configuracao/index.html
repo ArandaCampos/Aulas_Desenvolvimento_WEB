@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Renan Aranda Campos">
+    <meta name="description" content="Configurações do usuário">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Configuração - Somas</title>
+</head>
+<body class="column center-center">
+    <aside class="row start-center">
+        <a class="paragraph" href="../index.html" style="text-decoration: none;">Voltar</a>
+    </aside>
+    
+    <h1 class="title">Configuração</h1>
+    <div class="row gap-10 margin-50-30 center-center">
+        <label class="paragraph" for="user">Nome</label>
+        <input class="paragraph input-config" name="user" type="text" placeholder="Nome" id="user">
+    </div>
+    <div class="row gap-10">
+        <label class="paragraph" for="email">E-mail</label>
+        <input class="paragraph input-config" name="email" type="email" placeholder="nome@somas.org.br" id="email">
+    </div>
+    <div>
+        <a href="../index.html" class="btn-cancel" type="submit">Cancelar</a> 
+        <a href="../index.html" class="btn-submit" onclick="send()" type="submit">Confirmar</a>
+    </div>
+    <script src="../JS/config_page.js"></script>
+</body>
+</html>
