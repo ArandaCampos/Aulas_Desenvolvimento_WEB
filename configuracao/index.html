@@ -9,12 +9,31 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Configuração - Somas</title>
 </head>
-<body class="column center-center">
+<body class="column">
     <aside class="row start-center">
         <a class="paragraph" href="../index.html" style="text-decoration: none;">Voltar</a>
     </aside>
+    <main class="container gap-50 margin-50-30 padding-3" style="margin-top: 10%;">
+        <div>
+            <h1 class="super-title">Configuração</h1>
+        </div>
+        <div class="column gap-20 center-center">
+            <div class="row gap-10">
+                <label class="paragraph" for="user">Nome</label>
+                <input class="paragraph input-config" name="user" type="text" placeholder="Nome" id="user">
+            </div>
+            <div class="row gap-10">
+                <label class="paragraph" for="email">E-mail</label>
+                <input class="paragraph input-config" name="email" type="email" placeholder="nome@somas.org.br" id="email">
+            </div>
+            <div>
+                <a href="../index.html" class="btn-cancel paragraph" type="submit">Cancelar</a> 
+                <a href="../index.html" class="btn-submit paragraph" onclick="send()" type="submit">Confirmar</a>
+            </div>        
+        </div>
+    </main>
     
-    <h1 class="title">Configuração</h1>
+    <!-- <h1 class="title">Configuração</h1>
     <div class="row gap-10 margin-50-30 center-center">
         <label class="paragraph" for="user">Nome</label>
         <input class="paragraph input-config" name="user" type="text" placeholder="Nome" id="user">
@@ -24,9 +43,9 @@
         <input class="paragraph input-config" name="email" type="email" placeholder="nome@somas.org.br" id="email">
     </div>
     <div>
-        <a href="../index.html" class="btn-cancel" type="submit">Cancelar</a> 
-        <a href="../index.html" class="btn-submit" onclick="send()" type="submit">Confirmar</a>
-    </div>
+        <a href="../index.html" class="btn-cancel paragraph" type="submit">Cancelar</a> 
+        <a href="../index.html" class="btn-submit paragraph" onclick="send()" type="submit">Confirmar</a>
+    </div> -->
     <script src="../JS/config_page.js"></script>
 </body>
 </html>

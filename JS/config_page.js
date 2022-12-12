@@ -12,8 +12,6 @@ const set_config = () => {
 const send = () => {
     localStorage.setItem('user', element_user.value)
     localStorage.setItem('email', element_email.value)
-    
-    window.location.href = 'http://google.com'
 }
 
 set_config()
