@@ -9,9 +9,10 @@ const loading = async () => {
 
     for (var i = 0; i <= 100; i += 4){
         document.getElementById("progress").style.width = i + "%"
-        document.getElementById("number").innerHTML = i + "%";
+        document.getElementById("number").innerHTML = "Carregando (" + i + "%)";
         await delay(100);
     }
+    document.getElementById("progress").style.background = "#CC5450";
 }
 
 const showForm = async () => {

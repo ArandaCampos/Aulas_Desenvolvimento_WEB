@@ -21,16 +21,26 @@
     </aside>
     <header class="container gap-50 margin-50-30 padding-3">
         <div>
-            <h1 class="super-title">Posicionamento.</h1>
-            <h2 class="super-subtitle">&emsp;Organizando os elementos.</h2>
+            <h1 class="super-title">Posicionamento, parte I.</h1>
+            <h2 class="super-subtitle">&emsp;Posicionamento os elementos com display-flex.</h2>
         </div>
         <div>
-            <section class="illustration">
-                <!-- <span class="column center-start gap-10" style="height: 100%; width: 100%">
-                    <canvas class="circle move-ease-in"></canvas>
-                    <canvas class="circle move-linear"></canvas>
-                    <canvas class="circle move-ease-out"></canvas>
-                </span> -->
+            <section class="illustration column gap-20" style="padding-top: 30px; padding-bottom: 30px;">
+                <section class="row start-center gap-50" style="margin-left: 30px;">
+                    <canvas class="circle-80 bg-warning"></canvas>
+                    <canvas class="circle-80 bg-warning"></canvas>
+                    <canvas class="circle-80 bg-warning"></canvas>
+                </section>
+                <section class="row center-center gap-50">
+                    <canvas class="circle-80 bg-alert"></canvas>
+                    <canvas class="circle-80 bg-alert"></canvas>
+                    <canvas class="circle-80 bg-alert"></canvas>
+                </section>
+                <section class="row end-center gap-50" style="margin-right: 30px;">
+                    <canvas class="circle-80 bg-principal-shadow"></canvas>
+                    <canvas class="circle-80 bg-principal-shadow"></canvas>
+                    <canvas class="circle-80 bg-principal-shadow"></canvas>
+                </section>
             </section>
         </div>
     </header>
@@ -38,20 +48,70 @@
         <div class="row center gap-50 padding-3 margin-50-30" id="inicio">
             <div class="column card padding-2 bg-principal shadow-principal">
                 <h3 class="title-card txt-left">&emsp;O que vamos aprender</h3>
-                <p class="subtitle-card txt-left">&emsp;<strong>Posicionar elementos</strong> WEB.</p>
+                <p class="subtitle-card txt-left">&emsp;Posicionar elementos com <strong>display-flex</strong>.</p>
             </div>
             <div class="column card padding-2 bg-warning shadow-warning">
                 <h3 class="title-card txt-left">&emsp;Quando usar</h3>
-                <p class="subtitle-card txt-left">&emsp;Sempre que precisar <strong>alinhar elementos</strong> algo na página.</p>
+                <p class="subtitle-card txt-left">&emsp;Sempre que precisar <strong>alterar a posição</strong> do elemento na página.</p>
             </div>
             <div class="column card padding-2 bg-alert shadow-alert">
                 <h3 class="title-card txt-left">&emsp;Erros comuns</h3>
                 <p class="subtitle-card txt-left">&emsp;Confundir <strong>items</strong> e <strong>content</strong>.</p>
             </div>
         </div>
+
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Identificando o objeto de estudo.</h2>
+            </div>
+            <figure class="center-center column" style="margin-top: 50px;">
+                <img src="imagens/anatomia_display.png" style="top: 20px;">
+                <figcaption>Nomenclaturas no display flex</figcaption>
+            </figure>
+        </div>
+        <div class="content gap-50 margin-50-30 padding-3">
+            <div>
+                <h2 class="title">Anatomia no display.</h2>
+            </div>
+            <section class="center-center column" style="margin-top: 50px;">
+                <div class="row space-around padding-3 gap-10 bg-principal" style=" width: 80%; border: 2px dashed #9BE8FF;border-radius: 8px;">
+                    <canvas class="square-80 bg-alert"></canvas>
+                    <canvas class="square-80 bg-alert"></canvas>
+                    <canvas class="square-80 bg-alert"></canvas>
+                </div>
+                <div class="row center-center gap-50">
+                    <div class="row center-center gap-10">
+                        <canvas class="circle-20 bg-principal"></canvas>
+                        <p class="paragraph">Content</p>
+                    </div>
+                    <div class="row center-center gap-10">
+                        <canvas class="circle-20 bg-alert"></canvas>
+                        <p class="paragraph">Items</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
+    <footer>
+        <div class="content gap-50 margin-30 padding-3" id="atividade">
+            <div>
+                <h2 class="title">Bora praticar?</h2>
+            </div>
+            <ol class="column center-start" type="I">
+                <li>
+                    <a class="paragraph" href="https://replit.com/~" target="_blank" rel="noreferrer">Replit</a>
+                </li>
+                <li>
+                    <a class="paragraph" href="#" target="_blank" rel="noreferrer">Atividade de fixação</a>
+                </li>
+                <li>
+                    <a class="paragraph" href="#" target="_blank" rel="noreferrer">Exit Ticket</a>
+                </li>
+            </ol>
+        </div>
+    </footer>
 
-    
+    <script src="../JS/scroll.js"></script>
 </body>
 </html>
